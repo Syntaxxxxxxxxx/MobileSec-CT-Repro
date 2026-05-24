@@ -1,0 +1,31 @@
+# local environment and large files
+env/**
+!env/
+!env/README.md
+!env/MANIFEST.md
+
+# common large/generated files
+*.apk
+*.aab
+*.mp4
+*.mov
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.log
+*.tmp
+
+# Android / Gradle
+.gradle/
+build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
