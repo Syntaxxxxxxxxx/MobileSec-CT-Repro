@@ -24,6 +24,7 @@
 详见 `env/MANIFEST.md`。当前已登记：
 
 - `env/TabbedOut.txt`
+- `env/paper_artifacts/tabbed-out`
 - `env/microsoft-jdk-17.0.18-windows-x64.zip`
 - `env/commandlinetools-win-14742923_latest.zip`
 - `env/apache-maven-3.9.11-bin.zip`
@@ -44,3 +45,11 @@ https://github.com/beerphilipp/tabbed-out
 2. 必须在 `env/MANIFEST.md` 记录来源、用途、时间和校验信息。
 3. 只允许作为论文 artifact 参考，不直接运行攻击 PoC。
 4. 不允许将真实网站 URL、真实 cookie、真实账号状态带入 PoC。
+
+当前已克隆到：
+
+```text
+env/paper_artifacts/tabbed-out
+```
+
+Windows 注意事项：仓库的 `analysis/results/` 包含 Windows 保留文件名，例如 `con.*`。本项目使用 sparse checkout 保留 `pocs/` 和分析代码，排除 `analysis/results/`。

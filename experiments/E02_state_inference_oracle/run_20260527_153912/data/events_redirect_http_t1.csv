@@ -1,0 +1,3 @@
+"experiment_id","timestamp_ms","relative_ms_from_launch","event_name","event_code","url","browser_package","android_version","browser_version","note"
+"E02_state_inference_oracle","1779867639023","0","SERVICE_CONNECTED","0","http://198.18.0.1:8000/redirect/http?trial=1","com.android.chrome","Android 9 API 28","138.0.7204.179","component=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabsConnectionService"
+"E02_state_inference_oracle","1779867639043","0","extraCallback:onWarmupCompleted","10000","http://198.18.0.1:8000/redirect/http?trial=1","com.android.chrome","Android 9 API 28","138.0.7204.179","bundle={}"

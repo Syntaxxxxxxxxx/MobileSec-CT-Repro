@@ -1,0 +1,1 @@
+﻿logcat 未采集：雷电模拟器启动后 adb devices 为空，未进入 device 状态。

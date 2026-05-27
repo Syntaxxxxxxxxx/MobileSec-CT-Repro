@@ -1,0 +1,5 @@
+﻿$env:CT_REPRO_HOST='0.0.0.0'
+$env:CT_REPRO_PORT='8000'
+$env:CT_REPRO_SERVER_LOG='D:\IEEE S&P\experiments\E01_callback_baseline\run_20260527_152504\server.log'
+Set-Location 'D:\IEEE S&P'
+python '.\server\app.py' *> 'D:\IEEE S&P\experiments\E01_callback_baseline\run_20260527_152504\logs\server_stdout_manual.log'

@@ -1,0 +1,3 @@
+2026-05-25 22:53:01:057   47716-48816/InitBugReport: [562] :init report. ldplayer, 9.5.13.0, À×µçÄ£ÄâÆ÷
+2026-05-25 22:53:01:058   47716-48816/InitBugReport: [608] :SetUnhandledExceptionFilter
+2026-05-25 22:53:01:058   47716-48816/InitBugReport: [611] :SetUnhandledExceptionFilter2

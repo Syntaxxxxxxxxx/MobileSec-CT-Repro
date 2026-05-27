@@ -114,11 +114,63 @@ $env:JAVA_HOME = "X:\env\jdk-17.0.19+10"
 & X:\env\android-sdk\cmdline-tools\latest\cmdline-tools\bin\sdkmanager.bat --sdk_root=X:\env\android-sdk "platform-tools" "platforms;android-35"
 ```
 
-## 7. 尚未配置内容
+## 7. 雷电模拟器与 P05 脚本
 
-- Android Emulator system image 尚未安装。
-- AVD 尚未创建。
-- Android Studio 未检查。
-- Gradle wrapper 尚未创建，因为当前阶段尚未实现 Android app。
+已将课程机上已有的雷电模拟器从 `F:\Mobile Security\env\leidian` 复制到当前项目：
 
-这些内容应在进入 app 构建阶段前再配置，避免现在引入不必要的大文件。
+```text
+env/leidian
+env/leidian/LDPlayer9/adb.exe
+```
+
+目录体积约 2.67 GB，共 429 个文件。该目录只用于本地授权模拟器实验，默认不进入 Git，来源和用途已登记在 `env/MANIFEST.md`。
+
+P05 已补全以下 Windows PowerShell 脚本：
+
+```text
+scripts/run_server.ps1
+scripts/build_app.ps1
+scripts/install_app.ps1
+scripts/collect_logcat.ps1
+scripts/screenshot.ps1
+scripts/screenrecord.ps1
+scripts/export_artifacts.ps1
+scripts/common.ps1
+```
+
+所有脚本都支持：
+
+- `-ExperimentId`，例如 `E01_callback_baseline`。
+- `-RunId`，例如 `run_20260525_220000`；不传时自动创建 `run_YYYYMMDD_HHMMSS`。
+- 输出到 `experiments/<experiment_id>/<run_id>/`。
+- 中文注释和中文错误提示。
+
+常用命令示例：
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\run_server.ps1 -ExperimentId E01_callback_baseline
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\build_app.ps1 -ExperimentId E01_callback_baseline
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install_app.ps1 -ExperimentId E01_callback_baseline
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\collect_logcat.ps1 -ExperimentId E01_callback_baseline
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\screenshot.ps1 -ExperimentId E01_callback_baseline
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\screenrecord.ps1 -ExperimentId E01_callback_baseline -Seconds 20
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\export_artifacts.ps1 -ExperimentId E01_callback_baseline
+```
+
+当前仍需手动启动雷电模拟器，使以下命令出现 `device` 状态：
+
+```powershell
+.\env\leidian\LDPlayer9\adb.exe devices
+```
+
+P06 实测发现复制版 `env\leidian` 启动不稳定；原路径雷电模拟器可正常连接 adb：
+
+```powershell
+& "F:\Mobile Security\env\leidian\LDPlayer9\adb.exe" devices
+```
+
+后续实验优先使用原路径 adb，并在脚本中显式传入：
+
+```powershell
+-AdbPath "F:\Mobile Security\env\leidian\LDPlayer9\adb.exe"
+```

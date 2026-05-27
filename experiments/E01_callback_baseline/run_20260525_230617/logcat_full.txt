@@ -1,0 +1,383 @@
+﻿--------- beginning of system
+05-25 23:14:53.603  1603  1885 I ActivityManager: Force stopping edu.mobilesec.ctrepro appid=10053 user=0: from pid 3460
+05-25 23:14:53.604  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+--------- beginning of main
+05-25 23:14:53.604  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:14:53.604  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:14:53.605  1943  1943 D CarrierSvcBindHelper: No carrier app for: 0
+05-25 23:14:54.610  1478  1536 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+05-25 23:14:54.711  1603  1891 I ActivityManager: START u0 {flg=0x10000000 cmp=edu.mobilesec.ctrepro/.MainActivity (has extras)} from uid 2000
+05-25 23:14:54.721  1603  1618 W SchedPolicy: add_tid_to_cgroup failed to write '2277' (No space left on device); fd=24
+05-25 23:14:54.721  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:14:54.732  2200  2200 I oid.coreservice: type=1400 audit(0.0:840): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=2111 ioctlcmd=6867 scontext=u:r:system_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:14:54.744  1603  1620 I ActivityManager: Start proc 3466:edu.mobilesec.ctrepro/u0a53 for activity edu.mobilesec.ctrepro/.MainActivity
+05-25 23:14:54.755  3466  3466 I Zygote  : seccomp disabled by setenforce 0
+05-25 23:14:54.756  1462  1462 I Binder:1462_1: type=1400 audit(0.0:841): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=2111 scontext=u:r:system_server:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:14:54.756  1603  1603 I android.anim: type=1400 audit(0.0:842): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=2111 ioctlcmd=686e scontext=u:r:system_server:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:14:54.756  3466  3466 I bilesec.ctrepr: Late-enabling -Xcheck:jni
+05-25 23:14:54.767  3466  3466 D nativebridge: call UnloadNativeBridge! state=1
+05-25 23:14:54.769  3466  3466 I bilesec.ctrepro: type=1400 audit(0.0:843): avc: denied { open } for path="/data/local/cfg-zieih/app_device" dev="sdb2" ino=393338 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+05-25 23:14:54.778  1603  1897 W SchedPolicy: add_tid_to_cgroup failed to write '3466' (No space left on device); fd=27
+05-25 23:14:54.849  1603  1603 I android.anim.lf: type=1400 audit(0.0:844): avc: denied { call } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+05-25 23:14:54.849  1753  1753 I RenderThread: type=1400 audit(0.0:845): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=2111 ioctlcmd=6867 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:14:54.849  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:14:54.869  1462  1462 I surfaceflinger: type=1400 audit(0.0:846): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=2111 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:14:54.897  3466  3466 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-25 23:14:54.899  3466  3466 I bilesec.ctrepro: type=1400 audit(0.0:847): avc: denied { read } for name="Applications" dev="sdcardfs" ino=655362 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0 tclass=lnk_file permissive=1
+05-25 23:14:54.976  3466  3466 I CT_REPRO: E01_callback_baseline | 1779722094976 | 0 | BROWSER_NOT_FOUND | -1 | http://127.0.0.1:8000/basic |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器
+05-25 23:14:54.981  3466  3466 D OpenGLRenderer: Skia GL Pipeline
+05-25 23:14:54.981  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:14:54.989  1603  1611 W System  : A resource failed to call close. 
+05-25 23:14:54.990  1603  1611 I chatty  : uid=1000(system) FinalizerDaemon identical 14 lines
+05-25 23:14:54.990  1603  1611 W System  : A resource failed to call close. 
+05-25 23:14:55.039  3466  3488 I         : fastpipe: Connect success
+05-25 23:14:55.040  3466  3488 I         : fastpipe: Connect success
+05-25 23:14:55.040  3466  3488 D HostConnection: HostRPC::connect sucess: app=edu.mobilesec.ctrepro, pid=3466, tid=3488, this=0x76388882b540
+05-25 23:14:55.041  3466  3488 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:edu.mobilesec.ctrepro
+05-25 23:14:55.042  3466  3488 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+05-25 23:14:55.042  3466  3488 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+05-25 23:14:55.042  3466  3488 I OpenGLRenderer: Initialized EGL, version 1.4
+05-25 23:14:55.042  3466  3488 D OpenGLRenderer: Swap behavior 1
+05-25 23:14:55.049  3466  3488 D EGL_emulation: eglCreateContext: 0x7638927abe00: maj 3 min 1 rcv 4
+05-25 23:14:55.076  3466  3488 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082da
+05-25 23:14:55.076  3466  3488 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082e5
+05-25 23:14:55.078  3466  3488 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1 v1
+05-25 23:14:55.080  3466  3488 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008c29
+05-25 23:14:55.080  3466  3488 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+05-25 23:14:55.082  3466  3488 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-25 23:14:55.082  3466  3488 D vndksupport: Loading /vendor/lib64/hw/gralloc.default.so from current namespace instead of sphal namespace.
+05-25 23:14:55.086  3466  3488 E EGL_emulation: tid 3488: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-25 23:14:55.086  3466  3488 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x763888961a80, error=EGL_BAD_MATCH
+05-25 23:14:55.112  1603  1617 I ActivityManager: Displayed edu.mobilesec.ctrepro/.MainActivity: +400ms
+05-25 23:14:55.113  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:14:55.114  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:14:55.123  1603  2918 I         : fastpipe: close connect
+05-25 23:14:55.124  1603  1885 W SchedPolicy: add_tid_to_cgroup failed to write '2277' (No space left on device); fd=25
+05-25 23:14:55.124  1603  1885 W SchedPolicy: add_tid_to_cgroup failed to write '2400' (No space left on device); fd=25
+05-25 23:14:55.124  1603  1885 W SchedPolicy: add_tid_to_cgroup failed to write '2479' (No space left on device); fd=25
+05-25 23:14:55.184  1462  2173 W SurfaceFlinger: Attempting to set client state on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-25 23:14:55.184  1462  2173 W SurfaceFlinger: Attempting to destroy on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-25 23:14:56.504  3466  3466 I CT_REPRO: E01_callback_baseline | 1779722096504 | 0 | LAUNCH_SKIPPED | -1 | http://127.0.0.1:8000/basic |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器，跳过 ACTION_VIEW fallback
+05-25 23:15:00.049  1459  1459 I ldinit  : type=1400 audit(0.0:858): avc: denied { read } for name="partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-25 23:15:00.049  1459  1459 I ldinit  : type=1400 audit(0.0:859): avc: denied { open } for path="/proc/partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-25 23:15:00.049  1459  1459 I ldinit  : type=1400 audit(0.0:860): avc: denied { getattr } for path="/proc/partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-25 23:15:00.294  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:15:00.294  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:15:00.301  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:15:00.301  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:15:00.309  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:15:00.309  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:15:00.316  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:15:00.316  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:15:00.322  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:15:00.322  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:15:00.331  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:15:00.331  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:15:00.338  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:15:00.338  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:15:00.342  1603  3196 I ActivityManager: Force stopping edu.mobilesec.ctrepro appid=10053 user=0: from pid 3504
+05-25 23:15:00.343  1603  3196 I ActivityManager: Killing 3466:edu.mobilesec.ctrepro/u0a53 (adj 0): stop edu.mobilesec.ctrepro
+05-25 23:15:00.343  1603  3196 W ActivityManager: Force removing ActivityRecord{57c9760 u0 edu.mobilesec.ctrepro/.MainActivity t6}: app died, no saved state
+05-25 23:15:00.343  1603  1621 W libprocessgroup: kill(-3466, 9) failed: No such process
+05-25 23:15:00.346  1603  3196 W SchedPolicy: add_tid_to_cgroup failed to write '2277' (No space left on device); fd=27
+05-25 23:15:00.346  1603  3196 W SchedPolicy: add_tid_to_cgroup failed to write '2400' (No space left on device); fd=24
+05-25 23:15:00.346  1603  3196 W SchedPolicy: add_tid_to_cgroup failed to write '2479' (No space left on device); fd=24
+05-25 23:15:00.348  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:00.348  1943  1943 D CarrierSvcBindHelper: No carrier app for: 0
+05-25 23:15:00.348  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:15:00.348  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:15:00.364  1433  1433 I Zygote  : Process 3466 exited due to signal (9)
+05-25 23:15:00.388  1603  1621 W libprocessgroup: kill(-3466, 9) failed: No such process
+05-25 23:15:00.388  1603  1621 I libprocessgroup: Successfully killed process cgroup uid 10053 pid 3466 in 45ms
+05-25 23:15:00.398  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:15:00.398  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:15:00.398  1603  1627 W ActivityManager: setHasOverlayUi called on unknown pid: 3466
+05-25 23:15:00.402  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:00.403  1603  1611 I chatty  : uid=1000(system) FinalizerDaemon identical 15 lines
+05-25 23:15:00.403  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:00.409  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:15:00.409  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:15:00.422  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1020 android.content.ContextWrapper.sendBroadcast:449 com.android.coreservice.TabManager.notifyClosing:413 com.android.coreservice.TabManager.updateInner:200 com.android.coreservice.TabManager.onUpdate:235 
+05-25 23:15:00.434  2200  2200 I CoreService: notifyClosing notify tab closed taskPackageName:edu.mobilesec.ctrepro
+05-25 23:15:00.434  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:00.434  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:00.435  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:00.476  1462  1462 I Binder:1462_2: type=1400 audit(0.0:861): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=2111 scontext=u:r:untrusted_app:s0:c33,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:15:00.482  2277  2460 E EGL_emulation: tid 2460: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-25 23:15:00.482  2277  2460 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x763874d0c000, error=EGL_BAD_MATCH
+05-25 23:15:00.517  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:00.549  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:00.549  1603  1611 I chatty  : uid=1000(system) FinalizerDaemon identical 19 lines
+05-25 23:15:00.549  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:00.946  2277  2460 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+05-25 23:15:01.390  1603  1897 I ActivityManager: START u0 {flg=0x10000000 cmp=edu.mobilesec.ctrepro/.MainActivity (has extras)} from uid 2000
+05-25 23:15:01.398  1603  1618 W SchedPolicy: add_tid_to_cgroup failed to write '2277' (No space left on device); fd=24
+05-25 23:15:01.399  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:01.421  1603  1620 I ActivityManager: Start proc 3517:edu.mobilesec.ctrepro/u0a53 for activity edu.mobilesec.ctrepro/.MainActivity
+05-25 23:15:01.429  1462  1462 I Binder:1462_2: type=1400 audit(0.0:862): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=2111 scontext=u:r:system_server:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:15:01.429  1603  1603 I android.anim: type=1400 audit(0.0:863): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=2111 ioctlcmd=686e scontext=u:r:system_server:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:15:01.439  3517  3517 I Zygote  : seccomp disabled by setenforce 0
+05-25 23:15:01.440  3517  3517 I bilesec.ctrepr: Late-enabling -Xcheck:jni
+05-25 23:15:01.451  3517  3517 D nativebridge: call UnloadNativeBridge! state=1
+05-25 23:15:01.452  3517  3517 I bilesec.ctrepro: type=1400 audit(0.0:864): avc: denied { open } for path="/data/local/cfg-zieih/app_device" dev="sdb2" ino=393338 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+05-25 23:15:01.460  1603  1658 W SchedPolicy: add_tid_to_cgroup failed to write '3517' (No space left on device); fd=27
+05-25 23:15:01.581  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:01.628  3517  3517 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-25 23:15:01.629  3517  3517 I bilesec.ctrepro: type=1400 audit(0.0:865): avc: denied { read } for name="Applications" dev="sdcardfs" ino=655362 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0 tclass=lnk_file permissive=1
+05-25 23:15:01.629  1753  2154 W ziparchive: Unable to open '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk': No such file or directory
+05-25 23:15:01.630  1753  2154 E ndroid.systemu: Failed to open APK '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk' I/O error
+05-25 23:15:01.630  1753  2154 E ResourcesManager: failed to add asset path /data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk
+05-25 23:15:01.630  1753  2154 W PackageManager: Failure retrieving resources for edu.mobilesec.ctrepro
+05-25 23:15:01.630  1753  2154 W ziparchive: Unable to open '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk': No such file or directory
+05-25 23:15:01.630  1753  2154 E ndroid.systemu: Failed to open APK '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk' I/O error
+05-25 23:15:01.630  1753  2154 E ResourcesManager: failed to add asset path /data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk
+05-25 23:15:01.630  1753  2154 W PackageManager: Failure retrieving resources for edu.mobilesec.ctrepro
+05-25 23:15:01.630  1753  2154 W ziparchive: Unable to open '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk': No such file or directory
+05-25 23:15:01.630  1753  2154 E ndroid.systemu: Failed to open APK '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk' I/O error
+05-25 23:15:01.630  1753  2154 E ResourcesManager: failed to add asset path /data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk
+05-25 23:15:01.630  1753  2154 W PackageManager: Failure retrieving resources for edu.mobilesec.ctrepro
+05-25 23:15:01.667  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:01.668  1603  1611 I chatty  : uid=1000(system) FinalizerDaemon identical 19 lines
+05-25 23:15:01.668  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:01.716  3517  3517 I CT_REPRO: E01_callback_baseline | 1779722101713 | 0 | BROWSER_NOT_FOUND | -1 | http://127.0.0.1:8000/status/200 |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器
+05-25 23:15:01.720  3517  3517 D OpenGLRenderer: Skia GL Pipeline
+05-25 23:15:01.721  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:01.860  3517  3538 I         : fastpipe: Connect success
+05-25 23:15:01.860  3517  3538 I         : fastpipe: Connect success
+05-25 23:15:01.861  3517  3538 D HostConnection: HostRPC::connect sucess: app=edu.mobilesec.ctrepro, pid=3517, tid=3538, this=0x76388bcdf400
+05-25 23:15:01.861  3517  3538 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:edu.mobilesec.ctrepro
+05-25 23:15:01.862  3517  3538 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+05-25 23:15:01.862  3517  3538 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+05-25 23:15:01.862  3517  3538 I OpenGLRenderer: Initialized EGL, version 1.4
+05-25 23:15:01.862  3517  3538 D OpenGLRenderer: Swap behavior 1
+05-25 23:15:01.868  3517  3538 D EGL_emulation: eglCreateContext: 0x76388bc5f9c0: maj 3 min 1 rcv 4
+05-25 23:15:01.902  3517  3538 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082da
+05-25 23:15:01.902  3517  3538 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082e5
+05-25 23:15:01.904  3517  3538 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1 v1
+05-25 23:15:01.905  3517  3538 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008c29
+05-25 23:15:01.905  3517  3538 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+05-25 23:15:01.908  3517  3538 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-25 23:15:01.908  3517  3538 D vndksupport: Loading /vendor/lib64/hw/gralloc.default.so from current namespace instead of sphal namespace.
+05-25 23:15:01.913  3517  3538 E EGL_emulation: tid 3538: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-25 23:15:01.913  3517  3538 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x76388bd86100, error=EGL_BAD_MATCH
+05-25 23:15:01.941  1603  1617 I ActivityManager: Displayed edu.mobilesec.ctrepro/.MainActivity: +550ms
+05-25 23:15:01.942  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:01.943  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:01.964  1603  1897 W SchedPolicy: add_tid_to_cgroup failed to write '2277' (No space left on device); fd=25
+05-25 23:15:01.964  1603  1897 W SchedPolicy: add_tid_to_cgroup failed to write '2400' (No space left on device); fd=25
+05-25 23:15:01.964  1603  1897 W SchedPolicy: add_tid_to_cgroup failed to write '2479' (No space left on device); fd=25
+05-25 23:15:01.994  1462  1544 W SurfaceFlinger: Attempting to set client state on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-25 23:15:01.994  1462  1544 W SurfaceFlinger: Attempting to destroy on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-25 23:15:02.883  1603  2085 E memtrack: Couldn't load memtrack module
+05-25 23:15:02.884  1603  2085 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:15:03.221  3517  3517 I CT_REPRO: E01_callback_baseline | 1779722103221 | 0 | LAUNCH_SKIPPED | -1 | http://127.0.0.1:8000/status/200 |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器，跳过 ACTION_VIEW fallback
+05-25 23:15:04.521  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:04.522  1603  1611 I chatty  : uid=1000(system) FinalizerDaemon identical 20 lines
+05-25 23:15:04.522  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:07.128  1603  2085 I ActivityManager: Force stopping edu.mobilesec.ctrepro appid=10053 user=0: from pid 3552
+05-25 23:15:07.128  1603  2085 I ActivityManager: Killing 3517:edu.mobilesec.ctrepro/u0a53 (adj 0): stop edu.mobilesec.ctrepro
+05-25 23:15:07.128  1603  1621 W libprocessgroup: kill(-3517, 9) failed: No such process
+05-25 23:15:07.128  1603  2085 W ActivityManager: Force removing ActivityRecord{a3f1987 u0 edu.mobilesec.ctrepro/.MainActivity t7}: app died, no saved state
+05-25 23:15:07.131  1603  2085 W SchedPolicy: add_tid_to_cgroup failed to write '2277' (No space left on device); fd=27
+05-25 23:15:07.132  1603  2085 W SchedPolicy: add_tid_to_cgroup failed to write '2400' (No space left on device); fd=24
+05-25 23:15:07.132  1603  2085 W SchedPolicy: add_tid_to_cgroup failed to write '2479' (No space left on device); fd=24
+05-25 23:15:07.147  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:07.147  1943  1943 D CarrierSvcBindHelper: No carrier app for: 0
+05-25 23:15:07.148  1433  1433 I Zygote  : Process 3517 exited due to signal (9)
+05-25 23:15:07.165  1603  1627 W ActivityManager: setHasOverlayUi called on unknown pid: 3517
+05-25 23:15:07.173  1603  1621 W libprocessgroup: kill(-3517, 9) failed: No such process
+05-25 23:15:07.173  1603  1621 I libprocessgroup: Successfully killed process cgroup uid 10053 pid 3517 in 44ms
+05-25 23:15:07.191  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1020 android.content.ContextWrapper.sendBroadcast:449 com.android.coreservice.TabManager.notifyClosing:413 com.android.coreservice.TabManager.updateInner:200 com.android.coreservice.TabManager.onUpdate:235 
+05-25 23:15:07.225  2200  2200 I CoreService: notifyClosing notify tab closed taskPackageName:edu.mobilesec.ctrepro
+05-25 23:15:07.225  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:07.238  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:07.255  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:07.265  2277  2460 E EGL_emulation: tid 2460: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-25 23:15:07.265  2277  2460 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x763874d0c100, error=EGL_BAD_MATCH
+05-25 23:15:07.282  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:07.294  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:07.294  1603  1611 I chatty  : uid=1000(system) FinalizerDaemon identical 21 lines
+05-25 23:15:07.294  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:07.737  2277  2460 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+05-25 23:15:08.190  1603  1897 I ActivityManager: START u0 {flg=0x10000000 cmp=edu.mobilesec.ctrepro/.MainActivity (has extras)} from uid 2000
+05-25 23:15:08.199  1603  1618 W SchedPolicy: add_tid_to_cgroup failed to write '2277' (No space left on device); fd=24
+05-25 23:15:08.199  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:08.223  1603  1620 I ActivityManager: Start proc 3564:edu.mobilesec.ctrepro/u0a53 for activity edu.mobilesec.ctrepro/.MainActivity
+05-25 23:15:08.235  3564  3564 I Zygote  : seccomp disabled by setenforce 0
+05-25 23:15:08.236  3564  3564 I bilesec.ctrepr: Late-enabling -Xcheck:jni
+05-25 23:15:08.246  3564  3564 D nativebridge: call UnloadNativeBridge! state=1
+05-25 23:15:08.256  1603  1885 W SchedPolicy: add_tid_to_cgroup failed to write '3564' (No space left on device); fd=27
+05-25 23:15:08.322  1753  1753 I RenderThread: type=1400 audit(0.0:866): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=2111 ioctlcmd=6867 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:15:08.337  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:08.352  2200  2200 I oid.coreservice: type=1400 audit(0.0:867): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=2111 ioctlcmd=6867 scontext=u:r:system_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:15:08.384  3564  3564 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-25 23:15:08.397  1753  2310 W ziparchive: Unable to open '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk': No such file or directory
+05-25 23:15:08.397  1753  2310 E ndroid.systemu: Failed to open APK '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk' I/O error
+05-25 23:15:08.397  1753  2310 E ResourcesManager: failed to add asset path /data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk
+05-25 23:15:08.397  1753  2310 W PackageManager: Failure retrieving resources for edu.mobilesec.ctrepro
+05-25 23:15:08.397  1753  2310 W ziparchive: Unable to open '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk': No such file or directory
+05-25 23:15:08.397  1753  2310 E ndroid.systemu: Failed to open APK '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk' I/O error
+05-25 23:15:08.397  1753  2310 E ResourcesManager: failed to add asset path /data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk
+05-25 23:15:08.397  1753  2310 W PackageManager: Failure retrieving resources for edu.mobilesec.ctrepro
+05-25 23:15:08.397  1753  2310 W ziparchive: Unable to open '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk': No such file or directory
+05-25 23:15:08.397  1753  2310 E ndroid.systemu: Failed to open APK '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk' I/O error
+05-25 23:15:08.397  1753  2310 E ResourcesManager: failed to add asset path /data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk
+05-25 23:15:08.397  1753  2310 W PackageManager: Failure retrieving resources for edu.mobilesec.ctrepro
+05-25 23:15:08.429  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:08.429  1603  1611 I chatty  : uid=1000(system) FinalizerDaemon identical 19 lines
+05-25 23:15:08.429  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:08.482  3564  3564 I CT_REPRO: E01_callback_baseline | 1779722108482 | 0 | BROWSER_NOT_FOUND | -1 | http://127.0.0.1:8000/status/404-empty |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器
+05-25 23:15:08.487  3564  3564 D OpenGLRenderer: Skia GL Pipeline
+05-25 23:15:08.487  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:08.543  3564  3585 I         : fastpipe: Connect success
+05-25 23:15:08.544  3564  3585 I         : fastpipe: Connect success
+05-25 23:15:08.544  3564  3585 D HostConnection: HostRPC::connect sucess: app=edu.mobilesec.ctrepro, pid=3564, tid=3585, this=0x76388bce2400
+05-25 23:15:08.544  3564  3585 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:edu.mobilesec.ctrepro
+05-25 23:15:08.545  3564  3585 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+05-25 23:15:08.545  3564  3585 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+05-25 23:15:08.545  3564  3585 I OpenGLRenderer: Initialized EGL, version 1.4
+05-25 23:15:08.545  3564  3585 D OpenGLRenderer: Swap behavior 1
+05-25 23:15:08.553  3564  3585 D EGL_emulation: eglCreateContext: 0x76388bc5f9c0: maj 3 min 1 rcv 4
+05-25 23:15:08.585  3564  3585 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082da
+05-25 23:15:08.585  3564  3585 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082e5
+05-25 23:15:08.587  3564  3585 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1 v1
+05-25 23:15:08.589  3564  3585 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008c29
+05-25 23:15:08.589  3564  3585 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+05-25 23:15:08.591  3564  3585 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-25 23:15:08.591  3564  3585 D vndksupport: Loading /vendor/lib64/hw/gralloc.default.so from current namespace instead of sphal namespace.
+05-25 23:15:08.599  3564  3585 E EGL_emulation: tid 3585: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-25 23:15:08.599  3564  3585 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x76388bd86100, error=EGL_BAD_MATCH
+05-25 23:15:08.627  1603  1617 I ActivityManager: Displayed edu.mobilesec.ctrepro/.MainActivity: +436ms
+05-25 23:15:08.628  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:08.629  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:08.660  1603  2085 W SchedPolicy: add_tid_to_cgroup failed to write '2277' (No space left on device); fd=25
+05-25 23:15:08.660  1603  2085 W SchedPolicy: add_tid_to_cgroup failed to write '2400' (No space left on device); fd=25
+05-25 23:15:08.660  1603  2085 W SchedPolicy: add_tid_to_cgroup failed to write '2479' (No space left on device); fd=25
+05-25 23:15:08.698  1462  1691 W SurfaceFlinger: Attempting to set client state on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-25 23:15:08.698  1462  1691 W SurfaceFlinger: Attempting to destroy on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-25 23:15:09.986  3564  3564 I CT_REPRO: E01_callback_baseline | 1779722109986 | 0 | LAUNCH_SKIPPED | -1 | http://127.0.0.1:8000/status/404-empty |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器，跳过 ACTION_VIEW fallback
+05-25 23:15:13.851  1603  2085 I ActivityManager: Force stopping edu.mobilesec.ctrepro appid=10053 user=0: from pid 3599
+05-25 23:15:13.852  1603  2085 I ActivityManager: Killing 3564:edu.mobilesec.ctrepro/u0a53 (adj 0): stop edu.mobilesec.ctrepro
+05-25 23:15:13.852  1603  1621 W libprocessgroup: kill(-3564, 9) failed: No such process
+05-25 23:15:13.852  1603  2085 W ActivityManager: Force removing ActivityRecord{bb37aba u0 edu.mobilesec.ctrepro/.MainActivity t8}: app died, no saved state
+05-25 23:15:13.857  1603  2085 W SchedPolicy: add_tid_to_cgroup failed to write '2277' (No space left on device); fd=27
+05-25 23:15:13.857  1603  2085 W SchedPolicy: add_tid_to_cgroup failed to write '2400' (No space left on device); fd=24
+05-25 23:15:13.857  1603  2085 W SchedPolicy: add_tid_to_cgroup failed to write '2479' (No space left on device); fd=24
+05-25 23:15:13.859  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:13.859  1943  1943 D CarrierSvcBindHelper: No carrier app for: 0
+05-25 23:15:13.874  1433  1433 I Zygote  : Process 3564 exited due to signal (9)
+05-25 23:15:13.890  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:13.890  1603  1611 I chatty  : uid=1000(system) FinalizerDaemon identical 19 lines
+05-25 23:15:13.890  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:13.898  1603  1621 W libprocessgroup: kill(-3564, 9) failed: No such process
+05-25 23:15:13.898  1603  1621 I libprocessgroup: Successfully killed process cgroup uid 10053 pid 3564 in 45ms
+05-25 23:15:13.899  1603  1627 W ActivityManager: setHasOverlayUi called on unknown pid: 3564
+05-25 23:15:13.920  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1020 android.content.ContextWrapper.sendBroadcast:449 com.android.coreservice.TabManager.notifyClosing:413 com.android.coreservice.TabManager.updateInner:200 com.android.coreservice.TabManager.onUpdate:235 
+05-25 23:15:13.930  2200  2200 I CoreService: notifyClosing notify tab closed taskPackageName:edu.mobilesec.ctrepro
+05-25 23:15:13.930  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:13.931  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:13.938  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:13.991  2277  2460 E EGL_emulation: tid 2460: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-25 23:15:13.991  2277  2460 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x763874d0c000, error=EGL_BAD_MATCH
+05-25 23:15:14.009  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:14.062  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:14.062  1603  1611 I chatty  : uid=1000(system) FinalizerDaemon identical 18 lines
+05-25 23:15:14.062  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:14.435  2277  2460 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+05-25 23:15:14.900  1603  2085 I ActivityManager: START u0 {flg=0x10000000 cmp=edu.mobilesec.ctrepro/.MainActivity (has extras)} from uid 2000
+05-25 23:15:14.920  1603  1618 W SchedPolicy: add_tid_to_cgroup failed to write '2277' (No space left on device); fd=24
+05-25 23:15:14.921  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:14.931  1603  1620 I ActivityManager: Start proc 3610:edu.mobilesec.ctrepro/u0a53 for activity edu.mobilesec.ctrepro/.MainActivity
+05-25 23:15:14.946  3610  3610 I Zygote  : seccomp disabled by setenforce 0
+05-25 23:15:14.947  3610  3610 I bilesec.ctrepr: Late-enabling -Xcheck:jni
+05-25 23:15:14.957  3610  3610 D nativebridge: call UnloadNativeBridge! state=1
+05-25 23:15:14.967  1603  2519 W SchedPolicy: add_tid_to_cgroup failed to write '3610' (No space left on device); fd=27
+05-25 23:15:15.050  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:15.102  3610  3610 I bilesec.ctrepro: type=1400 audit(0.0:868): avc: denied { search } for name="/" dev="vboxsf" ino=1 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+05-25 23:15:15.102  3610  3610 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-25 23:15:15.108  1753  2310 W ziparchive: Unable to open '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk': No such file or directory
+05-25 23:15:15.108  1753  2310 E ndroid.systemu: Failed to open APK '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk' I/O error
+05-25 23:15:15.108  1753  2310 E ResourcesManager: failed to add asset path /data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk
+05-25 23:15:15.108  1753  2310 W PackageManager: Failure retrieving resources for edu.mobilesec.ctrepro
+05-25 23:15:15.108  1753  2310 W ziparchive: Unable to open '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk': No such file or directory
+05-25 23:15:15.108  1753  2310 E ndroid.systemu: Failed to open APK '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk' I/O error
+05-25 23:15:15.108  1753  2310 E ResourcesManager: failed to add asset path /data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk
+05-25 23:15:15.108  1753  2310 W PackageManager: Failure retrieving resources for edu.mobilesec.ctrepro
+05-25 23:15:15.108  1753  2310 W ziparchive: Unable to open '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk': No such file or directory
+05-25 23:15:15.108  1753  2310 E ndroid.systemu: Failed to open APK '/data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk' I/O error
+05-25 23:15:15.108  1753  2310 E ResourcesManager: failed to add asset path /data/app/edu.mobilesec.ctrepro-ywodCfws2TwZxRYJM2fsFA==/base.apk
+05-25 23:15:15.109  1753  2310 W PackageManager: Failure retrieving resources for edu.mobilesec.ctrepro
+05-25 23:15:15.150  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:15.150  1603  1611 I chatty  : uid=1000(system) FinalizerDaemon identical 17 lines
+05-25 23:15:15.150  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:15.202  3610  3610 I CT_REPRO: E01_callback_baseline | 1779722115202 | 0 | BROWSER_NOT_FOUND | -1 | http://127.0.0.1:8000/status/404-body |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器
+05-25 23:15:15.207  3610  3610 D OpenGLRenderer: Skia GL Pipeline
+05-25 23:15:15.207  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:15.269  3610  3610 I RenderThread: type=1400 audit(0.0:869): avc: denied { read write } for name="fastpipe" dev="tmpfs" ino=2111 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:15:15.269  3610  3610 I RenderThread: type=1400 audit(0.0:870): avc: denied { open } for path="/dev/fastpipe" dev="tmpfs" ino=2111 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:15:15.269  3610  3610 I RenderThread: type=1400 audit(0.0:871): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=2111 ioctlcmd=6864 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-25 23:15:15.273  3610  3631 I         : fastpipe: Connect success
+05-25 23:15:15.274  3610  3631 I         : fastpipe: Connect success
+05-25 23:15:15.274  3610  3631 D HostConnection: HostRPC::connect sucess: app=edu.mobilesec.ctrepro, pid=3610, tid=3631, this=0x76388bce2400
+05-25 23:15:15.275  3610  3631 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:edu.mobilesec.ctrepro
+05-25 23:15:15.275  3610  3631 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+05-25 23:15:15.275  3610  3631 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+05-25 23:15:15.276  3610  3631 I OpenGLRenderer: Initialized EGL, version 1.4
+05-25 23:15:15.276  3610  3631 D OpenGLRenderer: Swap behavior 1
+05-25 23:15:15.285  3610  3631 D EGL_emulation: eglCreateContext: 0x76388bc5f9c0: maj 3 min 1 rcv 4
+05-25 23:15:15.311  3610  3631 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082da
+05-25 23:15:15.311  3610  3631 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082e5
+05-25 23:15:15.314  3610  3631 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1 v1
+05-25 23:15:15.315  3610  3631 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008c29
+05-25 23:15:15.315  3610  3631 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+05-25 23:15:15.319  3610  3631 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-25 23:15:15.319  3610  3631 D vndksupport: Loading /vendor/lib64/hw/gralloc.default.so from current namespace instead of sphal namespace.
+05-25 23:15:15.323  3610  3631 E EGL_emulation: tid 3631: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-25 23:15:15.323  3610  3631 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x76388bd86100, error=EGL_BAD_MATCH
+05-25 23:15:15.349  1603  1617 I ActivityManager: Displayed edu.mobilesec.ctrepro/.MainActivity: +449ms
+05-25 23:15:15.349  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:15.350  2200  2200 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-25 23:15:15.362  1603  1603 I android.anim.lf: type=1400 audit(0.0:872): avc: denied { call } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+05-25 23:15:15.370  1603  2085 W SchedPolicy: add_tid_to_cgroup failed to write '2277' (No space left on device); fd=25
+05-25 23:15:15.370  1603  2085 W SchedPolicy: add_tid_to_cgroup failed to write '2400' (No space left on device); fd=25
+05-25 23:15:15.370  1603  2085 W SchedPolicy: add_tid_to_cgroup failed to write '2479' (No space left on device); fd=25
+05-25 23:15:15.426  1462  1543 W SurfaceFlinger: Attempting to set client state on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-25 23:15:15.426  1462  1543 W SurfaceFlinger: Attempting to destroy on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-25 23:15:16.711  3610  3610 I CT_REPRO: E01_callback_baseline | 1779722116709 | 0 | LAUNCH_SKIPPED | -1 | http://127.0.0.1:8000/status/404-body |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器，跳过 ACTION_VIEW fallback
+05-25 23:15:20.580  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:20.580  1603  1611 I chatty  : uid=1000(system) FinalizerDaemon identical 20 lines
+05-25 23:15:20.580  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:35.649  1451  1451 I health@2.0-serv: type=1400 audit(0.0:873): avc: denied { read } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+05-25 23:15:44.603  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:54.631  1478  1536 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+05-25 23:15:44.603  1603  1611 I chatty  : uid=1000(system) FinalizerDaemon identical 20 lines
+05-25 23:15:44.603  1603  1611 W System  : A resource failed to call close. 
+05-25 23:15:54.629  1478  1478 I storaged: type=1400 audit(0.0:874): avc: denied { call } for scontext=u:r:storaged:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+05-25 23:16:00.031  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:16:00.031  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:16:00.033  1450  1538 D EmuHWC2 : sent 48 syncs in 93s
+05-25 23:16:00.039  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:16:00.039  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:16:00.046  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:16:00.046  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:16:00.053  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:16:00.053  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:16:00.059  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:16:00.059  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:16:00.066  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:16:00.066  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:16:00.072  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:16:00.072  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:16:00.078  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:16:00.078  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:16:00.084  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:16:00.084  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:16:00.089  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:16:00.090  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:16:00.096  1603  1617 E memtrack: Couldn't load memtrack module
+05-25 23:16:00.096  1603  1617 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:16:02.941  1603  2085 E memtrack: Couldn't load memtrack module
+05-25 23:16:02.941  1603  2085 W android.os.Debug: failed to get memory consumption info: -1
+05-25 23:16:15.428  1603  1618 W ActivityManager: Stopping service due to app idle: u0a17 -12m5s543ms com.android.flysilkworm/com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService
+05-25 23:16:15.428  1603  1618 W ActivityManager: Stopping service due to app idle: u0a17 -12m5s236ms com.android.flysilkworm/.app.service.AppAutoUpdateService
+05-25 23:16:20.760  1603  1611 W System  : A resource failed to call close. 

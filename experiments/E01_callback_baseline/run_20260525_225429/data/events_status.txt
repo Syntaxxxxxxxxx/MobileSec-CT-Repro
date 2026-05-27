@@ -1,0 +1,1 @@
+﻿events.csv 仅包含 header：雷电模拟器未进入 adb device 状态，app 未运行，未产生 callback 事件。

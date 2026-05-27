@@ -1,0 +1,7 @@
+"experiment_id","timestamp_ms","relative_ms_from_launch","event_name","event_code","url","browser_package","android_version","browser_version","note"
+"E02_state_inference_oracle","1779867971229","0","SERVICE_CONNECTED","0","http://198.18.0.1:8000/download?trial=download_ok_t3","com.android.chrome","Android 9 API 28","138.0.7204.179","component=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabsConnectionService"
+"E02_state_inference_oracle","1779867971276","0","extraCallback:onWarmupCompleted","10000","http://198.18.0.1:8000/download?trial=download_ok_t3","com.android.chrome","Android 9 API 28","138.0.7204.179","bundle={}"
+"E02_state_inference_oracle","1779867972696","2","LAUNCH_REQUESTED","0","http://198.18.0.1:8000/download?trial=download_ok_t3","com.android.chrome","Android 9 API 28","138.0.7204.179","准备打开 Custom Tab"
+"E02_state_inference_oracle","1779867973034","340","TAB_SHOWN","5","http://198.18.0.1:8000/download?trial=download_ok_t3","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=1565032}"
+"E02_state_inference_oracle","1779867973103","409","NAVIGATION_STARTED","1","http://198.18.0.1:8000/download?trial=download_ok_t3","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=1565089}"
+"E02_state_inference_oracle","1779867973206","512","NAVIGATION_ABORTED","4","http://198.18.0.1:8000/download?trial=download_ok_t3","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=1565206}"

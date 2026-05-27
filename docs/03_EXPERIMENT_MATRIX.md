@@ -93,7 +93,27 @@
 3. 然后完成 E03：展示 state sharing 是 oracle 成立的状态基础。
 4. 最后完成 E04：把高风险或已修复问题写成 negative result/mitigation analysis。
 
-## 5. 不进入本项目实现范围的内容
+## 5. P03 Mock Server 实现状态
+
+更新时间：2026-05-24
+
+| Endpoint | 实现状态 | 对应实验 | 自测结果 |
+|---|---|---|---|
+| `/basic` | 已实现 | E01 | HTTP 200，`text/html; charset=utf-8` |
+| `/status/200` | 已实现 | E01/E02 | HTTP 200，`text/html; charset=utf-8` |
+| `/status/404-empty` | 已实现 | E01/E02 | HTTP 404，空响应体，`text/plain; charset=utf-8` |
+| `/status/404-body` | 已实现 | E01/E02 | HTTP 404，非空 HTML 响应体 |
+| `/redirect/http` | 已实现 | E02 | HTTP 302，`Location: /basic` |
+| `/redirect/html` | 已实现 | E02 | HTTP 200，HTML meta refresh + JS redirect |
+| `/content/pdf` | 已实现 | E02 | HTTP 200，`application/pdf` |
+| `/download` | 已实现 | E02 | HTTP 200，`Content-Disposition: attachment` |
+| `/delay/<ms>` | 已实现 | E02 | `/delay/100` 自测耗时约 0.103 秒；限制范围 0-10000 ms |
+| `/login` | 已实现 | E03 | 设置本地 demo cookie；server log 不记录 cookie 值 |
+| `/profile` | 已实现 | E03 | 无 cookie 显示 not logged in；有 demo cookie 显示 logged-in demo user |
+
+Server log 已实现 CSV 写入，字段为 `timestamp,method,path,status,user_agent,cookie_present`。自测确认 `/profile` 在 login 前记录 `cookie_present=no`，login 后记录 `cookie_present=yes`，未记录 cookie 值。
+
+## 6. 不进入本项目实现范围的内容
 
 | 内容 | 原因 | 处理方式 |
 |---|---|---|

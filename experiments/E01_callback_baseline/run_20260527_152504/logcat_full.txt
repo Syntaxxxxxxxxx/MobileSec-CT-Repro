@@ -1,0 +1,1379 @@
+﻿--------- beginning of main
+05-27 15:32:02.668  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon expire 20 lines
+05-27 15:32:02.668  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:08.970  1597  1660 D ActivityManager: Task: com.android.launcher3.Launcher, ID: 2, Base: com.android.launcher3.Launcher, packageName: com.android.launcher3
+--------- beginning of system
+05-27 15:32:08.970  1597  1660 I ActivityManager: Force stopping edu.mobilesec.ctrepro appid=10053 user=0: from pid 5527
+05-27 15:32:08.971  1597  1660 I ActivityManager: Killing 5321:edu.mobilesec.ctrepro/u0a53 (adj 0): stop edu.mobilesec.ctrepro
+05-27 15:32:08.971  1597  1616 W libprocessgroup: kill(-5321, 9) failed: No such process
+05-27 15:32:08.972  1597  1660 W ActivityManager: Force removing ActivityRecord{8f62421 u0 edu.mobilesec.ctrepro/.MainActivity t8}: app died, no saved state
+05-27 15:32:08.977  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '2386' (No space left on device); fd=27
+05-27 15:32:08.978  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '2669' (No space left on device); fd=24
+05-27 15:32:08.978  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '4075' (No space left on device); fd=24
+05-27 15:32:08.983  1450  1505 D EmuHWC2 : sent 18 syncs in 63s
+05-27 15:32:08.984  2386  2643 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+05-27 15:32:08.986  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:08.991  1433  1433 I Zygote  : Process 5321 exited due to signal (9)
+05-27 15:32:09.012  1597  1622 W ActivityManager: setHasOverlayUi called on unknown pid: 5321
+05-27 15:32:09.013  1597  1616 W libprocessgroup: kill(-5321, 9) failed: No such process
+05-27 15:32:09.013  1597  1616 I libprocessgroup: Successfully killed process cgroup uid 10053 pid 5321 in 42ms
+05-27 15:32:09.050  2324  2324 I oid.coreservice: type=1400 audit(0.0:1366): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:system_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:09.057  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1020 android.content.ContextWrapper.sendBroadcast:449 com.android.coreservice.TabManager.notifyClosing:413 com.android.coreservice.TabManager.updateInner:200 com.android.coreservice.TabManager.onUpdate:235 
+05-27 15:32:09.081  2324  2324 I CoreService: notifyClosing notify tab closed taskPackageName:edu.mobilesec.ctrepro
+05-27 15:32:09.084  1597  1889 I ActivityManager: START u0 {flg=0x10000000 cmp=edu.mobilesec.ctrepro/.MainActivity (has extras)} from uid 2000
+05-27 15:32:09.084  1934  1934 D CarrierSvcBindHelper: No carrier app for: 0
+05-27 15:32:09.093  1597  1597 I Binder:1597_7: type=1400 audit(0.0:1367): avc: denied { call } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+05-27 15:32:09.095  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:09.112  1597  2636 W SchedPolicy: add_tid_to_cgroup failed to write '2386' (No space left on device); fd=24
+05-27 15:32:09.112  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:09.113  1450  1450 I HwBinder:1450_2: type=1400 audit(0.0:1368): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:09.133  1449  1449 I allocator@2.0-s: type=1400 audit(0.0:1369): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6869 scontext=u:r:hal_graphics_allocator_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:09.133  1449  1449 I allocator@2.0-s: type=1400 audit(0.0:1370): avc: denied { read write } for name="fastpipe" dev="tmpfs" ino=3085 scontext=u:r:hal_graphics_allocator_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:09.133  1449  1449 I allocator@2.0-s: type=1400 audit(0.0:1371): avc: denied { open } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:hal_graphics_allocator_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:09.136  1462  1462 I Binder:1462_1: type=1400 audit(0.0:1372): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:untrusted_app:s0:c33,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:09.136  1462  1462 I Binder:1462_1: type=1400 audit(0.0:1373): avc: denied { getattr } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:09.136  2386  2386 I RenderThread: type=1400 audit(0.0:1374): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6869 scontext=u:r:untrusted_app:s0:c33,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:09.136  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:09.138  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:09.146  2386  2643 E EGL_emulation: tid 2643: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:09.146  2386  2643 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x763878d0f600, error=EGL_BAD_MATCH
+05-27 15:32:09.203  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:09.203  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 19 lines
+05-27 15:32:09.203  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:09.215  1597  1615 I ActivityManager: Start proc 5537:edu.mobilesec.ctrepro/u0a53 for activity edu.mobilesec.ctrepro/.MainActivity
+05-27 15:32:09.215  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:09.236  5537  5537 I Zygote  : seccomp disabled by setenforce 0
+05-27 15:32:09.237  5537  5537 I bilesec.ctrepr: Late-enabling -Xcheck:jni
+05-27 15:32:09.251  5537  5537 D nativebridge: call UnloadNativeBridge! state=1
+05-27 15:32:09.265  1597  2636 W SchedPolicy: add_tid_to_cgroup failed to write '5537' (No space left on device); fd=27
+05-27 15:32:09.270  1597  1612 I ActivityManager: Displayed edu.mobilesec.ctrepro/.MainActivity: +147ms
+05-27 15:32:09.332  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:09.364  5537  5537 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:09.419  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:09.420  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 24 lines
+05-27 15:32:09.420  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:09.468  1597  2636 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=24
+05-27 15:32:09.468  1597  2636 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=24
+05-27 15:32:09.468  1597  2636 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=24
+05-27 15:32:09.472  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=25
+05-27 15:32:09.472  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=25
+05-27 15:32:09.472  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=25
+05-27 15:32:09.473  5537  5537 D OpenGLRenderer: Skia GL Pipeline
+05-27 15:32:09.473  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:09.504  5537  5537 I CT_REPRO: E01_callback_baseline | 1779867129503 | 0 | SERVICE_CONNECTED | 0 | http://198.18.0.1:8000/basic | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | component=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabsConnectionService
+05-27 15:32:09.507  4188  4188 I cr_CompositorSurfaceMgr: Transitioning to surface with format: -1
+05-27 15:32:09.557  5537  5560 I         : fastpipe: Connect success
+05-27 15:32:09.558  5537  5560 I         : fastpipe: Connect success
+05-27 15:32:09.558  5537  5560 D HostConnection: HostRPC::connect sucess: app=edu.mobilesec.ctrepro, pid=5537, tid=5560, this=0x76388bce2400
+05-27 15:32:09.559  5537  5560 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:edu.mobilesec.ctrepro
+05-27 15:32:09.561  5537  5560 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+05-27 15:32:09.561  5537  5560 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+05-27 15:32:09.561  5537  5560 I OpenGLRenderer: Initialized EGL, version 1.4
+05-27 15:32:09.561  5537  5560 D OpenGLRenderer: Swap behavior 1
+05-27 15:32:09.565  5537  5560 D EGL_emulation: eglCreateContext: 0x76388bc5f9c0: maj 3 min 1 rcv 4
+05-27 15:32:09.585  5537  5560 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082da
+05-27 15:32:09.585  5537  5560 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082e5
+05-27 15:32:09.589  5537  5560 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1 v1
+05-27 15:32:09.591  5537  5560 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008c29
+05-27 15:32:09.591  5537  5560 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+05-27 15:32:09.593  5537  5560 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-27 15:32:09.594  5537  5560 D vndksupport: Loading /vendor/lib64/hw/gralloc.default.so from current namespace instead of sphal namespace.
+05-27 15:32:09.603  5537  5560 E EGL_emulation: tid 5560: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:09.603  5537  5560 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x76388bd83100, error=EGL_BAD_MATCH
+05-27 15:32:09.627  5537  5537 I CT_REPRO: E01_callback_baseline | 1779867129627 | 0 | extraCallback:onWarmupCompleted | 10000 | http://198.18.0.1:8000/basic | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | bundle={}
+05-27 15:32:09.634  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:09.635  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:09.665  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '2386' (No space left on device); fd=25
+05-27 15:32:09.665  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '2669' (No space left on device); fd=25
+05-27 15:32:09.665  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '4075' (No space left on device); fd=25
+05-27 15:32:09.693  1462  2638 W SurfaceFlinger: Attempting to set client state on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-27 15:32:09.693  1462  2638 W SurfaceFlinger: Attempting to destroy on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-27 15:32:10.306  1488  1488 I storaged: type=1400 audit(0.0:1388): avc: denied { call } for scontext=u:r:storaged:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+05-27 15:32:10.308  1488  1499 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+05-27 15:32:11.015  5537  5537 I CT_REPRO: E01_callback_baseline | 1779867131015 | 1 | LAUNCH_REQUESTED | 0 | http://198.18.0.1:8000/basic | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | 准备打开 Custom Tab
+05-27 15:32:11.021  1597  1861 I ActivityManager: START u0 {act=android.intent.action.VIEW dat=http://198.18.0.1:8000/... pkg=com.android.chrome cmp=com.android.chrome/com.google.android.apps.chrome.IntentDispatcher (has extras)} from uid 10053
+05-27 15:32:11.030  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:11.037  4188  4188 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@cf3df32
+05-27 15:32:11.037  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=24
+05-27 15:32:11.037  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=27
+05-27 15:32:11.038  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '5537' (No space left on device); fd=24
+05-27 15:32:11.038  1597  1660 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=27
+05-27 15:32:11.117  1597  1730 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=38, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:11.117  1597  1698 D WIFI    : got request NetworkRequest [ TRACK_DEFAULT id=38, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:11.117  1597  1698 D WIFI_UT : got request NetworkRequest [ TRACK_DEFAULT id=38, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:11.117  1597  1729 D WIFI_AWARE_FACTORY: got request NetworkRequest [ TRACK_DEFAULT id=38, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:11.123  1934  1934 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=38, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:11.171  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:11.171  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 28 lines
+05-27 15:32:11.171  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:11.245  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:11.245  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:11.263  1597  1861 I ActivityManager: START u0 {act=android.intent.action.VIEW dat=http://198.18.0.1:8000/... flg=0x2800000 pkg=com.android.chrome cmp=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabActivity (has extras)} from uid 10059
+05-27 15:32:11.272  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:11.371  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:11.372  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 25 lines
+05-27 15:32:11.372  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:11.416  4188  4188 I .android.chrome: type=1400 audit(0.0:1389): avc: denied { read } for name="Applications" dev="sdcardfs" ino=655362 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0 tclass=lnk_file permissive=1
+05-27 15:32:11.416  4188  4188 I .android.chrome: type=1400 audit(0.0:1390): avc: denied { search } for name="/" dev="vboxsf" ino=1 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+05-27 15:32:11.417  4188  4188 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@f26cdad
+05-27 15:32:11.423  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:11.430  1597  1597 I Binder:1597_5: type=1400 audit(0.0:1391): avc: denied { read } for name="Applications" dev="sdcardfs" ino=655362 scontext=u:r:system_server:s0 tcontext=u:object_r:sdcardfs:s0 tclass=lnk_file permissive=1
+05-27 15:32:11.463  4188  4188 W cr_ContextualSearch: No manager!
+05-27 15:32:11.465  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:11.471  1597  2636 W SchedPolicy: add_tid_to_cgroup failed to write '5449' (No space left on device); fd=24
+05-27 15:32:11.472  1597  1861 W SchedPolicy: add_tid_to_cgroup failed to write '5449' (No space left on device); fd=27
+05-27 15:32:11.473  5537  5537 I CT_REPRO: E01_callback_baseline | 1779867131472 | 458 | TAB_SHOWN | 5 | http://198.18.0.1:8000/basic | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=723472}
+05-27 15:32:11.503  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:11.513  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:11.514  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:11.514  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:11.514  4188  4188 I cr_A11yState: Will check again after 250 milliseconds.
+05-27 15:32:11.524  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:11.547  5537  5537 I CT_REPRO: E01_callback_baseline | 1779867131547 | 533 | NAVIGATION_STARTED | 1 | http://198.18.0.1:8000/basic | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=723546}
+05-27 15:32:11.550  4366  4366 I CrGpuMain: type=1400 audit(0.0:1392): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6869 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:11.586  1462  1462 I Binder:1462_4: type=1400 audit(0.0:1393): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:11.596  4188  4235 E EGL_emulation: tid 4235: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:11.596  4188  4235 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xbd87a620, error=EGL_BAD_MATCH
+05-27 15:32:11.599  4188  4188 I cr_BrowserUiUtils: Recorded Startup.Android.FirstDrawCompletedTime = 161 ms
+05-27 15:32:11.607  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:11.607  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 27 lines
+05-27 15:32:11.607  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:11.631  1597  1612 I ActivityManager: Displayed com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabActivity: +607ms
+05-27 15:32:11.633  4188  4188 I cr_E2E_DCController: setSafeAreaConstraint: false
+05-27 15:32:11.635  5537  5537 I CT_REPRO: E01_callback_baseline | 1779867131635 | 621 | NAVIGATION_FINISHED | 2 | http://198.18.0.1:8000/basic | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=723634}
+05-27 15:32:11.637  4188  4188 I cr_CompositorSurfaceMgr: Transitioning to surface with format: -1
+05-27 15:32:11.638  4188  4188 I cr_CompositorSurfaceMgr: surfaceCreated format: 0
+05-27 15:32:11.682  4188  4188 D skia    : --- Failed to create image decoder with message 'unimplemented'
+05-27 15:32:11.686  4366  4403 W chromium: [WARNING:components/viz/service/frame_sinks/root_compositor_frame_sink_impl.cc:985] Requested unsupported preferred frame interval 0.016666 s (=60.0024Hz)
+05-27 15:32:11.702  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:11.703  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:11.736  4188  4188 I cr_CustomTab: To create AuxiliarySearchController on deferred startup.
+05-27 15:32:11.745  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '5537' (No space left on device); fd=25
+05-27 15:32:11.764  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:11.764  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:11.764  4188  4188 I cr_A11yState: Will check again after 500 milliseconds.
+05-27 15:32:11.778  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:11.782  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:11.783  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:11.783  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:11.783  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:11.783  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:11.783  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:11.788  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:11.788  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:11.788  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:11.789  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:11.789  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:11.789  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:11.789  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:11.790  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:11.790  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:11.790  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:11.790  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:11.790  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:11.790  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:11.790  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:11.790  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:11.790  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:11.790  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:11.790  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:11.791  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:11.792  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:11.792  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:11.792  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:11.792  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:11.792  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:11.793  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:11.793  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:11.793  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:11.793  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:11.793  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:11.793  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:11.794  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:11.794  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:11.794  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:11.794  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:11.794  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:11.794  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:11.795  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:11.795  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:11.795  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:11.795  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:11.795  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:11.795  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:12.266  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:12.266  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:12.266  4188  4188 I cr_A11yState: Will check again after 1000 milliseconds.
+05-27 15:32:13.268  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:13.268  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:13.268  4188  4188 I cr_A11yState: Will check again after 2000 milliseconds.
+05-27 15:32:14.933  1459  1459 I ldinit  : type=1400 audit(0.0:1394): avc: denied { read } for name="partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-27 15:32:14.933  1459  1459 I ldinit  : type=1400 audit(0.0:1395): avc: denied { open } for path="/proc/partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-27 15:32:14.933  1459  1459 I ldinit  : type=1400 audit(0.0:1396): avc: denied { getattr } for path="/proc/partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-27 15:32:15.270  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:15.270  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:15.270  4188  4188 I cr_A11yState: Will check again after 4000 milliseconds.
+05-27 15:32:15.651  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:15.651  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:15.652  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:15.652  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:15.652  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:15.652  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:15.653  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:15.653  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:15.653  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:15.653  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:15.653  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:15.653  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:15.654  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:15.654  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:15.654  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:15.655  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:15.655  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:15.655  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:16.281  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:16.281  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 27 lines
+05-27 15:32:16.281  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:17.283  1462  1462 I Binder:1462_1: type=1400 audit(0.0:1397): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:shell:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:17.288  5605  5605 E cutils-trace: Error opening trace file: No such file or directory (2)
+05-27 15:32:17.288  5605  5605 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-27 15:32:17.288  5605  5605 D vndksupport: Loading /vendor/lib64/hw/gralloc.default.so from current namespace instead of sphal namespace.
+05-27 15:32:17.290  5605  5605 I screencap: type=1400 audit(0.0:1398): avc: denied { open } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:shell:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:17.290  5605  5605 I screencap: type=1400 audit(0.0:1399): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6864 scontext=u:r:shell:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:17.293  5605  5605 I screencap: type=1400 audit(0.0:1400): avc: denied { open } for path="/data/local/cfg-zieih/gl_force" dev="sdb2" ino=393567 scontext=u:r:shell:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+05-27 15:32:17.296  5605  5605 I         : fastpipe: Connect success
+05-27 15:32:17.297  5605  5605 I         : fastpipe: Connect success
+05-27 15:32:17.297  5605  5605 D HostConnection: HostRPC::connect sucess: app=screencap, pid=5605, tid=5605, this=0x763893ee4540
+05-27 15:32:17.298  5605  5605 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:screencap
+05-27 15:32:17.417  2577  2577 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /storage/emulated/0/e01_basic_localnet.png
+05-27 15:32:17.640  1597  2636 E memtrack: Couldn't load memtrack module
+05-27 15:32:17.640  1597  2636 W android.os.Debug: failed to get memory consumption info: -1
+05-27 15:32:18.179  5615  5615 I appproc : app_process main with argv: /system/bin com.android.commands.input.Input keyevent 4 
+05-27 15:32:18.179  5615  5615 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+05-27 15:32:18.183  5615  5615 E cutils-trace: Error opening trace file: No such file or directory (2)
+05-27 15:32:18.207  5615  5615 V libnb   : enter native_bridge2_isCompatibleWith 3
+05-27 15:32:18.246  5615  5615 I libnb   : Found /system/lib64/libhoudini.so version 3
+05-27 15:32:18.276  5615  5615 I main    : type=1400 audit(0.0:1401): avc: denied { mounton } for path="/proc/cpuinfo" dev="proc" ino=4026531992 scontext=u:r:shell:s0 tcontext=u:object_r:proc_cpuinfo:s0 tclass=file permissive=1
+05-27 15:32:18.281  5615  5615 I app_process: The ClassLoaderContext is a special shared library.
+05-27 15:32:18.282  5615  5615 W app_process: Could not create mount namespace.
+05-27 15:32:18.282  5615  5615 D nativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86_64
+05-27 15:32:18.282  5615  5615 W nativebridge: Failed to bind-mount /data/local/cfg-zieih/ as /proc/cpuinfo: No such file or directory
+05-27 15:32:18.282  5615  5615 W nativebridge: Failed to bind-mount /system/lib64/x86_64/cpuinfo as /proc/cpuinfo: Operation not permitted
+05-27 15:32:18.282  5615  5615 D nativebridge: call UnloadNativeBridge! state=2
+05-27 15:32:18.319  5615  5615 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+05-27 15:32:18.319  5615  5615 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=730319, downTime=730319, deviceId=-1, source=0x101 }
+05-27 15:32:18.326  1597  1597 I InputDispatcher: type=1400 audit(0.0:1402): avc: denied { call } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+05-27 15:32:18.343  5615  5615 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=730319, downTime=730319, deviceId=-1, source=0x101 }
+05-27 15:32:18.351  1597  1614 D AutofillManagerService: onBackKeyPressed()
+05-27 15:32:18.356  4366  4366 I CompositorGpuTh: type=1400 audit(0.0:1403): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:18.360  5615  5615 D AndroidRuntime: Shutting down VM
+05-27 15:32:18.404  1597  2636 W SchedPolicy: add_tid_to_cgroup failed to write '5537' (No space left on device); fd=27
+05-27 15:32:18.404  1597  2636 W SchedPolicy: add_tid_to_cgroup failed to write '5449' (No space left on device); fd=24
+05-27 15:32:18.404  1597  2636 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=24
+05-27 15:32:18.404  1597  2636 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=24
+05-27 15:32:18.406  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:18.416  2324  2324 I oid.coreservice: type=1400 audit(0.0:1404): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6869 scontext=u:r:system_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:18.437  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:18.463  1462  1462 I Binder:1462_5: type=1400 audit(0.0:1405): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:18.463  5537  5537 I RenderThread: type=1400 audit(0.0:1406): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:18.468  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:18.469  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:18.472  5537  5560 E EGL_emulation: tid 5560: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:18.472  5537  5560 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x76388bd83100, error=EGL_BAD_MATCH
+05-27 15:32:18.583  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:18.583  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 25 lines
+05-27 15:32:18.583  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:18.586  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=25
+05-27 15:32:18.586  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '5449' (No space left on device); fd=25
+05-27 15:32:18.586  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=25
+05-27 15:32:18.586  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=25
+05-27 15:32:18.602  4188  4188 E cr_CompositorSurfaceMgr: surfaceDestroyed format : 4
+05-27 15:32:18.633  4188  4250 I cr_BindingManager: onTrimMemory: level=20, size=1
+05-27 15:32:18.640  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:18.640  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:18.640  4188  4188 I cr_A11yState: Max delay reached. Send information as is.
+05-27 15:32:18.640  4188  4188 I cr_A11yState: Informing listeners of changes.
+05-27 15:32:18.640  4188  4188 I cr_A11yState: New AccessibilityState: State{isComplexUserInteractionServiceEnabled=true, isTouchExplorationEnabled=false, isPerformGesturesEnabled=false, isAnyAccessibilityServiceEnabled=true, isAccessibilityToolPresent=true, isTextShowPasswordEnabled=true, isOnlyAutofillRunning=false, isOnlyPasswordManagersEnabled=false, isKnownScreenReaderEnabled=false}
+05-27 15:32:18.641  5537  5537 I CT_REPRO: E01_callback_baseline | 1779867138641 | 7627 | TAB_HIDDEN | 6 | http://198.18.0.1:8000/basic | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=730641}
+05-27 15:32:18.644  1597  1889 I ActivityManager: Killing 5449:com.android.chrome:sandboxed_process18/u0a59i18 (adj 0): isolated not needed
+05-27 15:32:18.644  1597  1616 W libprocessgroup: kill(-5449, 9) failed: No such process
+05-27 15:32:18.664  4188  4188 I cr_CompositorSurfaceMgr: SurfaceState : detach from parent : 0
+05-27 15:32:18.668  4188  4188 W cr_ContextualSearch: Warning, the 0 state was aborted.
+05-27 15:32:18.669  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:18.670  1434  1434 I Zygote  : Process 5449 exited cleanly (0)
+05-27 15:32:18.673  1597  1617 E KernelCpuSpeedReader: Failed to read cpu-freq: /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state (No such file or directory)
+05-27 15:32:18.673  1597  1617 E KernelWakelockReader: neither /proc/wakelocks nor /d/wakeup_sources exists
+05-27 15:32:18.674  1597  1617 W BatteryStatsImpl: Couldn't get kernel wake lock stats
+05-27 15:32:18.684  1434  1434 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:18.685  1462  1462 W SurfaceFlinger: couldn't log to binary event log: overflow.
+05-27 15:32:18.685  1434  1434 I Zygote  : IsCopy  libcrashcatcher: 0
+05-27 15:32:18.686  1597  1616 W libprocessgroup: kill(-5449, 9) failed: No such process
+05-27 15:32:18.686  1597  1616 I libprocessgroup: Successfully killed process cgroup uid 99018 pid 5449 in 42ms
+05-27 15:32:18.691  1597  1613 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+05-27 15:32:18.691  1597  1613 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+05-27 15:32:18.691  1597  1615 I ActivityManager: Start proc 5631:com.android.chrome:sandboxed_process19/u0i19 for service com.android.chrome/org.chromium.content.app.SandboxedProcessService19
+05-27 15:32:18.706  5631  5631 W nativebridge: Failed to bind-mount /data/local/cfg-zieih/ as /proc/cpuinfo: Not a directory
+05-27 15:32:18.708  5631  5631 I Zygote  : seccomp disabled by setenforce 0
+05-27 15:32:18.711  5631  5631 D nativebridge: call UnloadNativeBridge! state=1
+05-27 15:32:18.723  5631  5631 I boxed_process19: type=1400 audit(0.0:1407): avc: denied { open } for path="/data/local/cfg-zieih/app_device" dev="sdb2" ino=393551 scontext=u:r:isolated_app:s0:c19,c256,c512,c768 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+05-27 15:32:18.734  1597  2636 W SchedPolicy: add_tid_to_cgroup failed to write '2423' (No space left on device); fd=24
+05-27 15:32:18.745  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '5631' (No space left on device); fd=25
+05-27 15:32:18.745  1597  2636 W SchedPolicy: add_tid_to_cgroup failed to write '2423' (No space left on device); fd=25
+05-27 15:32:18.806  5631  5631 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:18.811  5631  5631 W boxed_process1: Unknown chunk type '200'.
+05-27 15:32:18.818  5631  5631 I cr_SplitCompatApp: version=138.0.7204.179 (720417927) minSdkVersion=26 isBundle=true processName=com.android.chrome:sandboxed_process19 isIsolatedProcess=true
+05-27 15:32:18.823  5631  5631 W SystemServiceRegistry: No service published for: uimode
+05-27 15:32:18.826  5631  5631 I cr_ChildProcessService: Creating new ChildProcessService pid=5631
+05-27 15:32:18.852  5631  5658 I cr_LibraryLoader: Successfully loaded native library
+05-27 15:32:18.852  5631  5658 I cr_CachingUmaRecorder: Flushed 2 samples from 2 histograms, 0 samples were dropped.
+05-27 15:32:19.270  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:19.270  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:19.270  4188  4188 I cr_A11yState: Will check again after 250 milliseconds.
+05-27 15:32:19.541  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:19.541  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:19.541  4188  4188 I cr_A11yState: Will check again after 500 milliseconds.
+05-27 15:32:20.043  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:20.043  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:20.043  4188  4188 I cr_A11yState: Will check again after 1000 milliseconds.
+05-27 15:32:20.080  1462  1462 I surfaceflinger: type=1400 audit(0.0:1410): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:20.080  1462  1462 I surfaceflinger: type=1400 audit(0.0:1411): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:20.080  1450  1450 I HwBinder:1450_2: type=1400 audit(0.0:1412): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:20.422  1597  1881 D ActivityManager: Task: com.android.launcher3.Launcher, ID: 2, Base: com.android.launcher3.Launcher, packageName: com.android.launcher3
+05-27 15:32:20.422  1597  1881 I ActivityManager: Force stopping edu.mobilesec.ctrepro appid=10053 user=0: from pid 5668
+05-27 15:32:20.422  1597  1881 I ActivityManager: Killing 5537:edu.mobilesec.ctrepro/u0a53 (adj 0): stop edu.mobilesec.ctrepro
+05-27 15:32:20.422  1597  1616 W libprocessgroup: kill(-5537, 9) failed: No such process
+05-27 15:32:20.422  1597  1881 W ActivityManager: Force removing ActivityRecord{28a3281 u0 edu.mobilesec.ctrepro/.MainActivity t9}: app died, no saved state
+05-27 15:32:20.425  1462  1541 W SurfaceFlinger: Attempting to destroy on removed layer: AppWindowToken{88e6767 token=Token{100ff26 ActivityRecord{28a3281 u0 edu.mobilesec.ctrepro/.MainActivity t9}}}#0
+05-27 15:32:20.426  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '2386' (No space left on device); fd=27
+05-27 15:32:20.427  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '2669' (No space left on device); fd=24
+05-27 15:32:20.427  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '4075' (No space left on device); fd=24
+05-27 15:32:20.431  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:20.441  1433  1433 I Zygote  : Process 5537 exited due to signal (9)
+05-27 15:32:20.455  2386  2643 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+05-27 15:32:20.466  1597  1616 W libprocessgroup: kill(-5537, 9) failed: No such process
+05-27 15:32:20.466  1597  1616 I libprocessgroup: Successfully killed process cgroup uid 10053 pid 5537 in 44ms
+05-27 15:32:20.476  1597  1622 W ActivityManager: setHasOverlayUi called on unknown pid: 5537
+05-27 15:32:20.493  1934  1934 D CarrierSvcBindHelper: No carrier app for: 0
+05-27 15:32:20.494  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1020 android.content.ContextWrapper.sendBroadcast:449 com.android.coreservice.TabManager.notifyClosing:413 com.android.coreservice.TabManager.updateInner:200 com.android.coreservice.TabManager.onUpdate:235 
+05-27 15:32:20.510  1597  1881 I ActivityManager: START u0 {flg=0x10000000 cmp=edu.mobilesec.ctrepro/.MainActivity (has extras)} from uid 2000
+05-27 15:32:20.517  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:20.517  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 30 lines
+05-27 15:32:20.517  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:20.521  2324  2324 I CoreService: notifyClosing notify tab closed taskPackageName:edu.mobilesec.ctrepro
+05-27 15:32:20.536  1449  1449 I allocator@2.0-s: type=1400 audit(0.0:1413): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:hal_graphics_allocator_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:20.543  1449  1449 I allocator@2.0-s: type=1400 audit(0.0:1414): avc: denied { read write } for name="fastpipe" dev="tmpfs" ino=3085 scontext=u:r:hal_graphics_allocator_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:20.550  2386  2643 E EGL_emulation: tid 2643: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:20.550  2386  2643 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x763878e54400, error=EGL_BAD_MATCH
+05-27 15:32:20.560  2324  2324 W oid.coreservic: Unknown chunk type '200'.
+05-27 15:32:20.572  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:20.585  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '2386' (No space left on device); fd=24
+05-27 15:32:20.587  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:20.610  5676  5676 I Zygote  : seccomp disabled by setenforce 0
+05-27 15:32:20.612  5676  5676 I bilesec.ctrepr: Late-enabling -Xcheck:jni
+05-27 15:32:20.620  1597  1615 I ActivityManager: Start proc 5676:edu.mobilesec.ctrepro/u0a53 for activity edu.mobilesec.ctrepro/.MainActivity
+05-27 15:32:20.628  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:20.629  5676  5676 D nativebridge: call UnloadNativeBridge! state=1
+05-27 15:32:20.629  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:20.637  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:20.645  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '5676' (No space left on device); fd=27
+05-27 15:32:20.649  1597  1612 I ActivityManager: Displayed edu.mobilesec.ctrepro/.MainActivity: +99ms
+05-27 15:32:20.720  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:20.734  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:20.734  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 29 lines
+05-27 15:32:20.734  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:20.759  5676  5676 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:20.855  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=24
+05-27 15:32:20.855  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=24
+05-27 15:32:20.855  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=24
+05-27 15:32:20.857  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=25
+05-27 15:32:20.857  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=25
+05-27 15:32:20.857  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=25
+05-27 15:32:20.860  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:20.860  5676  5676 D OpenGLRenderer: Skia GL Pipeline
+05-27 15:32:20.893  5676  5676 I CT_REPRO: E01_callback_baseline | 1779867140893 | 0 | SERVICE_CONNECTED | 0 | http://198.18.0.1:8000/status/200 | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | component=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabsConnectionService
+05-27 15:32:20.896  4188  4188 I cr_CompositorSurfaceMgr: Transitioning to surface with format: -1
+05-27 15:32:20.941  5676  5676 I CT_REPRO: E01_callback_baseline | 1779867140941 | 0 | extraCallback:onWarmupCompleted | 10000 | http://198.18.0.1:8000/status/200 | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | bundle={}
+05-27 15:32:20.948  5676  5702 I         : fastpipe: Connect success
+05-27 15:32:20.950  5676  5702 I         : fastpipe: Connect success
+05-27 15:32:20.950  5676  5702 D HostConnection: HostRPC::connect sucess: app=edu.mobilesec.ctrepro, pid=5676, tid=5702, this=0x76388bccb400
+05-27 15:32:20.951  5676  5702 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:edu.mobilesec.ctrepro
+05-27 15:32:20.953  5676  5702 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+05-27 15:32:20.953  5676  5702 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+05-27 15:32:20.953  5676  5702 I OpenGLRenderer: Initialized EGL, version 1.4
+05-27 15:32:20.953  5676  5702 D OpenGLRenderer: Swap behavior 1
+05-27 15:32:20.957  5676  5702 D EGL_emulation: eglCreateContext: 0x76388bc5f6c0: maj 3 min 1 rcv 4
+05-27 15:32:20.982  5676  5702 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082da
+05-27 15:32:20.982  5676  5702 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082e5
+05-27 15:32:20.985  5676  5702 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1 v1
+05-27 15:32:20.986  5676  5702 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008c29
+05-27 15:32:20.986  5676  5702 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+05-27 15:32:20.992  5676  5702 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-27 15:32:20.993  5676  5702 D vndksupport: Loading /vendor/lib64/hw/gralloc.default.so from current namespace instead of sphal namespace.
+05-27 15:32:21.001  5676  5702 E EGL_emulation: tid 5702: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:21.001  5676  5702 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x76388bc27d00, error=EGL_BAD_MATCH
+05-27 15:32:21.030  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:21.031  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:21.043  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:21.043  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:21.043  4188  4188 I cr_A11yState: Will check again after 2000 milliseconds.
+05-27 15:32:21.060  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '2386' (No space left on device); fd=25
+05-27 15:32:21.060  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '2669' (No space left on device); fd=25
+05-27 15:32:21.061  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '4075' (No space left on device); fd=25
+05-27 15:32:21.090  1462  2227 W SurfaceFlinger: Attempting to set client state on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-27 15:32:21.090  1462  2227 W SurfaceFlinger: Attempting to destroy on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-27 15:32:21.160  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:21.160  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 27 lines
+05-27 15:32:21.160  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:22.360  5676  5676 I CT_REPRO: E01_callback_baseline | 1779867142360 | 2 | LAUNCH_REQUESTED | 0 | http://198.18.0.1:8000/status/200 | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | 准备打开 Custom Tab
+05-27 15:32:22.366  1597  1881 I ActivityManager: START u0 {act=android.intent.action.VIEW dat=http://198.18.0.1:8000/... pkg=com.android.chrome cmp=com.android.chrome/com.google.android.apps.chrome.IntentDispatcher (has extras)} from uid 10053
+05-27 15:32:22.375  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:22.380  4188  4188 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@eabd818
+05-27 15:32:22.380  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=24
+05-27 15:32:22.380  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=27
+05-27 15:32:22.381  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '5676' (No space left on device); fd=24
+05-27 15:32:22.381  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=27
+05-27 15:32:22.449  1597  1698 D WIFI    : got request NetworkRequest [ TRACK_DEFAULT id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:22.449  1597  1729 D WIFI_AWARE_FACTORY: got request NetworkRequest [ TRACK_DEFAULT id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:22.449  1597  1730 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:22.449  1597  1698 D WIFI_UT : got request NetworkRequest [ TRACK_DEFAULT id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:22.449  1934  1934 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=40, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:22.566  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:22.567  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:22.586  1597  1597 I Binder:1597_7: type=1400 audit(0.0:1429): avc: denied { call } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+05-27 15:32:22.586  1597  1889 I ActivityManager: START u0 {act=android.intent.action.VIEW dat=http://198.18.0.1:8000/... flg=0x2800000 pkg=com.android.chrome cmp=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabActivity (has extras)} from uid 10059
+05-27 15:32:22.594  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:22.595  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:22.595  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 28 lines
+05-27 15:32:22.595  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:22.676  4188  4188 I .android.chrome: type=1400 audit(0.0:1430): avc: denied { search } for name="/" dev="vboxsf" ino=1 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+05-27 15:32:22.679  4188  4188 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@122cdeb
+05-27 15:32:22.680  1597  1597 I Binder:1597_7: type=1400 audit(0.0:1431): avc: denied { read } for name="Applications" dev="sdcardfs" ino=655362 scontext=u:r:system_server:s0 tcontext=u:object_r:sdcardfs:s0 tclass=lnk_file permissive=1
+05-27 15:32:22.684  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:22.701  4188  4188 W cr_ContextualSearch: No manager!
+05-27 15:32:22.703  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:22.709  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '5631' (No space left on device); fd=24
+05-27 15:32:22.710  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '5631' (No space left on device); fd=27
+05-27 15:32:22.714  5676  5676 I CT_REPRO: E01_callback_baseline | 1779867142714 | 356 | TAB_SHOWN | 5 | http://198.18.0.1:8000/status/200 | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=734709}
+05-27 15:32:22.737  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:22.744  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:22.745  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:22.745  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:22.745  4188  4188 I cr_A11yState: Will check again after 4000 milliseconds.
+05-27 15:32:22.754  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:22.763  4366  4366 I CrGpuMain: type=1400 audit(0.0:1432): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6869 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:22.764  5676  5676 I CT_REPRO: E01_callback_baseline | 1779867142763 | 405 | NAVIGATION_STARTED | 1 | http://198.18.0.1:8000/status/200 | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=734763}
+05-27 15:32:22.780  5676  5676 I RenderThread: type=1400 audit(0.0:1433): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:22.793  4188  4188 I cr_BrowserUiUtils: Recorded Startup.Android.FirstDrawCompletedTime = 100 ms
+05-27 15:32:22.795  4188  4235 E EGL_emulation: tid 4235: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:22.795  4188  4235 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xbed74440, error=EGL_BAD_MATCH
+05-27 15:32:22.830  4188  4188 I cr_E2E_DCController: setSafeAreaConstraint: false
+05-27 15:32:22.831  1597  1612 I ActivityManager: Displayed com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabActivity: +463ms
+05-27 15:32:22.832  5676  5676 I CT_REPRO: E01_callback_baseline | 1779867142831 | 473 | NAVIGATION_FINISHED | 2 | http://198.18.0.1:8000/status/200 | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=734831}
+05-27 15:32:22.834  4188  4188 I cr_CompositorSurfaceMgr: Transitioning to surface with format: -1
+05-27 15:32:22.835  4188  4188 I cr_CompositorSurfaceMgr: surfaceCreated format: 0
+05-27 15:32:22.861  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:22.862  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 27 lines
+05-27 15:32:22.862  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:22.911  4188  4188 D skia    : --- Failed to create image decoder with message 'unimplemented'
+05-27 15:32:22.912  4366  4403 W chromium: [WARNING:components/viz/service/frame_sinks/root_compositor_frame_sink_impl.cc:985] Requested unsupported preferred frame interval 0.016666 s (=60.0024Hz)
+05-27 15:32:22.924  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:22.925  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:22.948  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:22.948  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:22.948  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:22.948  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:22.948  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:22.948  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:22.949  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:22.950  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:22.950  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:22.950  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:22.950  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:22.950  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:22.950  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:22.951  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:22.951  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:22.951  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:22.951  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:22.951  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:22.951  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:22.952  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:22.952  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:22.952  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:22.952  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:22.952  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:22.952  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:22.953  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:22.953  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:22.953  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:22.953  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:22.953  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:22.954  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:22.954  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:22.954  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:22.954  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:22.954  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:22.954  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:22.955  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:22.955  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:22.955  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:22.955  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:22.955  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:22.955  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:22.955  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:22.956  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:22.956  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:22.956  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:22.956  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:22.956  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:22.962  4188  4188 I cr_CustomTab: To create AuxiliarySearchController on deferred startup.
+05-27 15:32:22.963  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '5676' (No space left on device); fd=25
+05-27 15:32:23.004  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:23.043  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:23.043  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:23.043  4188  4188 I cr_A11yState: Max delay reached. Send information as is.
+05-27 15:32:23.043  4188  4188 I cr_A11yState: Informing listeners of changes.
+05-27 15:32:23.043  4188  4188 I cr_A11yState: New AccessibilityState: State{isComplexUserInteractionServiceEnabled=true, isTouchExplorationEnabled=false, isPerformGesturesEnabled=false, isAnyAccessibilityServiceEnabled=true, isAccessibilityToolPresent=true, isTextShowPasswordEnabled=true, isOnlyAutofillRunning=false, isOnlyPasswordManagersEnabled=false, isKnownScreenReaderEnabled=false}
+05-27 15:32:24.933  1459  1459 I ldinit  : type=1400 audit(0.0:1435): avc: denied { read } for name="partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-27 15:32:24.933  1459  1459 I ldinit  : type=1400 audit(0.0:1436): avc: denied { open } for path="/proc/partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-27 15:32:24.933  1459  1459 I ldinit  : type=1400 audit(0.0:1437): avc: denied { getattr } for path="/proc/partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-27 15:32:26.746  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:26.746  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:26.746  4188  4188 I cr_A11yState: Will check again after 250 milliseconds.
+05-27 15:32:26.851  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:26.852  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:26.852  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:26.852  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:26.852  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:26.852  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:26.853  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:26.853  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:26.853  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:26.853  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:26.853  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:26.853  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:26.854  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:26.854  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:26.854  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:26.854  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:26.855  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:26.855  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:26.997  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:26.997  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:26.997  4188  4188 I cr_A11yState: Will check again after 500 milliseconds.
+05-27 15:32:27.523  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:27.523  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:27.523  4188  4188 I cr_A11yState: Will check again after 1000 milliseconds.
+05-27 15:32:28.524  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:28.524  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:28.524  4188  4188 I cr_A11yState: Will check again after 2000 milliseconds.
+05-27 15:32:28.603  1462  1462 I Binder:1462_3: type=1400 audit(0.0:1438): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:shell:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:28.608  5748  5748 E cutils-trace: Error opening trace file: No such file or directory (2)
+05-27 15:32:28.608  5748  5748 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-27 15:32:28.609  5748  5748 D vndksupport: Loading /vendor/lib64/hw/gralloc.default.so from current namespace instead of sphal namespace.
+05-27 15:32:28.613  5748  5748 I screencap: type=1400 audit(0.0:1439): avc: denied { open } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:shell:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:28.613  5748  5748 I screencap: type=1400 audit(0.0:1440): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6864 scontext=u:r:shell:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:28.616  5748  5748 I screencap: type=1400 audit(0.0:1441): avc: denied { open } for path="/data/local/cfg-zieih/gl_force" dev="sdb2" ino=393567 scontext=u:r:shell:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+05-27 15:32:28.619  5748  5748 I         : fastpipe: Connect success
+05-27 15:32:28.620  5748  5748 I         : fastpipe: Connect success
+05-27 15:32:28.620  5748  5748 D HostConnection: HostRPC::connect sucess: app=screencap, pid=5748, tid=5748, this=0x763893ee4540
+05-27 15:32:28.621  5748  5748 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:screencap
+05-27 15:32:28.724  2577  2577 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /storage/emulated/0/e01_status_200_localnet.png
+05-27 15:32:29.192  5758  5758 I appproc : app_process main with argv: /system/bin com.android.commands.input.Input keyevent 4 
+05-27 15:32:29.193  5758  5758 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+05-27 15:32:29.196  5758  5758 E cutils-trace: Error opening trace file: No such file or directory (2)
+05-27 15:32:29.207  5758  5758 V libnb   : enter native_bridge2_isCompatibleWith 3
+05-27 15:32:29.218  5758  5758 I libnb   : Found /system/lib64/libhoudini.so version 3
+05-27 15:32:29.230  5758  5758 I main    : type=1400 audit(0.0:1442): avc: denied { mounton } for path="/proc/cpuinfo" dev="proc" ino=4026531992 scontext=u:r:shell:s0 tcontext=u:object_r:proc_cpuinfo:s0 tclass=file permissive=1
+05-27 15:32:29.235  5758  5758 I app_process: The ClassLoaderContext is a special shared library.
+05-27 15:32:29.235  5758  5758 W app_process: Could not create mount namespace.
+05-27 15:32:29.235  5758  5758 D nativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86_64
+05-27 15:32:29.236  5758  5758 W nativebridge: Failed to bind-mount /data/local/cfg-zieih/ as /proc/cpuinfo: No such file or directory
+05-27 15:32:29.236  5758  5758 W nativebridge: Failed to bind-mount /system/lib64/x86_64/cpuinfo as /proc/cpuinfo: Operation not permitted
+05-27 15:32:29.236  5758  5758 D nativebridge: call UnloadNativeBridge! state=2
+05-27 15:32:29.260  5758  5758 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+05-27 15:32:29.260  5758  5758 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=741260, downTime=741260, deviceId=-1, source=0x101 }
+05-27 15:32:29.277  5758  5758 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=741260, downTime=741260, deviceId=-1, source=0x101 }
+05-27 15:32:29.283  1597  1614 D AutofillManagerService: onBackKeyPressed()
+05-27 15:32:29.294  5758  5758 D AndroidRuntime: Shutting down VM
+05-27 15:32:29.316  1462  1462 I surfaceflinger: type=1400 audit(0.0:1443): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:29.316  1450  1450 I HwBinder:1450_2: type=1400 audit(0.0:1444): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:29.347  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '5676' (No space left on device); fd=27
+05-27 15:32:29.347  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '5631' (No space left on device); fd=24
+05-27 15:32:29.347  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=24
+05-27 15:32:29.347  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=24
+05-27 15:32:29.349  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:29.369  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:29.369  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 29 lines
+05-27 15:32:29.369  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:29.381  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:29.407  5676  5702 E EGL_emulation: tid 5702: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:29.407  5676  5702 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x76388bc27d00, error=EGL_BAD_MATCH
+05-27 15:32:29.421  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:29.428  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:29.520  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=25
+05-27 15:32:29.520  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '5631' (No space left on device); fd=25
+05-27 15:32:29.520  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=25
+05-27 15:32:29.520  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=25
+05-27 15:32:29.535  4188  4188 E cr_CompositorSurfaceMgr: surfaceDestroyed format : 4
+05-27 15:32:29.561  4188  4250 I cr_BindingManager: onTrimMemory: level=20, size=1
+05-27 15:32:29.567  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:29.567  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:29.567  4188  4188 I cr_A11yState: Will check again after 4000 milliseconds.
+05-27 15:32:29.567  5676  5676 I CT_REPRO: E01_callback_baseline | 1779867149567 | 7209 | TAB_HIDDEN | 6 | http://198.18.0.1:8000/status/200 | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=741567}
+05-27 15:32:29.569  1597  1881 I ActivityManager: Killing 5631:com.android.chrome:sandboxed_process19/u0a59i19 (adj 0): isolated not needed
+05-27 15:32:29.569  1597  1616 W libprocessgroup: kill(-5631, 9) failed: No such process
+05-27 15:32:29.574  4188  4188 I cr_CompositorSurfaceMgr: SurfaceState : detach from parent : 0
+05-27 15:32:29.577  4188  4188 W cr_ContextualSearch: Warning, the 0 state was aborted.
+05-27 15:32:29.578  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:29.584  1462  1462 W SurfaceFlinger: couldn't log to binary event log: overflow.
+05-27 15:32:29.589  1434  1434 I Zygote  : Process 5631 exited due to signal (9)
+05-27 15:32:29.590  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:29.590  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 25 lines
+05-27 15:32:29.590  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:29.594  1597  1617 E KernelCpuSpeedReader: Failed to read cpu-freq: /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state (No such file or directory)
+05-27 15:32:29.594  1597  1617 E KernelWakelockReader: neither /proc/wakelocks nor /d/wakeup_sources exists
+05-27 15:32:29.594  1597  1617 W BatteryStatsImpl: Couldn't get kernel wake lock stats
+05-27 15:32:29.598  1434  1434 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:29.599  1434  1434 I Zygote  : IsCopy  libcrashcatcher: 0
+05-27 15:32:29.601  1597  1613 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+05-27 15:32:29.601  1597  1613 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+05-27 15:32:29.604  1597  1615 I ActivityManager: Start proc 5776:com.android.chrome:sandboxed_process20/u0i20 for service com.android.chrome/org.chromium.content.app.SandboxedProcessService20
+05-27 15:32:29.613  1597  1616 W libprocessgroup: kill(-5631, 9) failed: No such process
+05-27 15:32:29.613  1597  1616 I libprocessgroup: Successfully killed process cgroup uid 99019 pid 5631 in 43ms
+05-27 15:32:29.616  5776  5776 W nativebridge: Failed to bind-mount /data/local/cfg-zieih/ as /proc/cpuinfo: Not a directory
+05-27 15:32:29.618  5776  5776 I Zygote  : seccomp disabled by setenforce 0
+05-27 15:32:29.618  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '2423' (No space left on device); fd=24
+05-27 15:32:29.619  5776  5776 D nativebridge: call UnloadNativeBridge! state=1
+05-27 15:32:29.620  5776  5776 I boxed_process20: type=1400 audit(0.0:1452): avc: denied { open } for path="/data/local/cfg-zieih/app_device" dev="sdb2" ino=393551 scontext=u:r:isolated_app:s0:c20,c256,c512,c768 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+05-27 15:32:29.625  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '2423' (No space left on device); fd=25
+05-27 15:32:29.635  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '5776' (No space left on device); fd=25
+05-27 15:32:29.673  5776  5776 I boxed_process20: type=1400 audit(0.0:1453): avc: denied { getattr } for path="/data/data/com.android.chrome" dev="sdb2" ino=1048947 scontext=u:r:isolated_app:s0:c20,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c59,c256,c512,c768 tclass=dir permissive=1
+05-27 15:32:29.682  5776  5776 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:29.683  5776  5776 W boxed_process2: Unknown chunk type '200'.
+05-27 15:32:29.685  5776  5776 I cr_SplitCompatApp: version=138.0.7204.179 (720417927) minSdkVersion=26 isBundle=true processName=com.android.chrome:sandboxed_process20 isIsolatedProcess=true
+05-27 15:32:29.687  5776  5776 W SystemServiceRegistry: No service published for: uimode
+05-27 15:32:29.688  5776  5776 I cr_ChildProcessService: Creating new ChildProcessService pid=5776
+05-27 15:32:29.711  5776  5801 I cr_LibraryLoader: Successfully loaded native library
+05-27 15:32:29.711  5776  5801 I cr_CachingUmaRecorder: Flushed 2 samples from 2 histograms, 0 samples were dropped.
+05-27 15:32:29.863  1455  1455 I sensors@1.0-ser: type=1400 audit(0.0:1454): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6865 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:30.526  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:30.526  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:30.526  4188  4188 I cr_A11yState: Max delay reached. Send information as is.
+05-27 15:32:30.526  4188  4188 I cr_A11yState: Informing listeners of changes.
+05-27 15:32:30.526  4188  4188 I cr_A11yState: New AccessibilityState: State{isComplexUserInteractionServiceEnabled=true, isTouchExplorationEnabled=false, isPerformGesturesEnabled=false, isAnyAccessibilityServiceEnabled=true, isAccessibilityToolPresent=true, isTextShowPasswordEnabled=true, isOnlyAutofillRunning=false, isOnlyPasswordManagersEnabled=false, isKnownScreenReaderEnabled=false}
+05-27 15:32:31.355  1597  2083 D ActivityManager: Task: com.android.launcher3.Launcher, ID: 2, Base: com.android.launcher3.Launcher, packageName: com.android.launcher3
+05-27 15:32:31.355  1597  2083 I ActivityManager: Force stopping edu.mobilesec.ctrepro appid=10053 user=0: from pid 5811
+05-27 15:32:31.356  1597  2083 I ActivityManager: Killing 5676:edu.mobilesec.ctrepro/u0a53 (adj 0): stop edu.mobilesec.ctrepro
+05-27 15:32:31.356  1597  1616 W libprocessgroup: kill(-5676, 9) failed: No such process
+05-27 15:32:31.356  1597  2083 W ActivityManager: Force removing ActivityRecord{c003273 u0 edu.mobilesec.ctrepro/.MainActivity t10}: app died, no saved state
+05-27 15:32:31.358  1462  1919 W SurfaceFlinger: Attempting to destroy on removed layer: AppWindowToken{10ff5a9 token=Token{366b530 ActivityRecord{c003273 u0 edu.mobilesec.ctrepro/.MainActivity t10}}}#0
+05-27 15:32:31.359  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '2386' (No space left on device); fd=27
+05-27 15:32:31.359  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '2669' (No space left on device); fd=24
+05-27 15:32:31.359  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '4075' (No space left on device); fd=24
+05-27 15:32:31.363  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:31.365  2386  2643 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+05-27 15:32:31.372  1433  1433 I Zygote  : Process 5676 exited due to signal (9)
+05-27 15:32:31.391  1934  1934 D CarrierSvcBindHelper: No carrier app for: 0
+05-27 15:32:31.392  1597  1622 W ActivityManager: setHasOverlayUi called on unknown pid: 5676
+05-27 15:32:31.402  1597  1616 W libprocessgroup: kill(-5676, 9) failed: No such process
+05-27 15:32:31.402  1597  1616 I libprocessgroup: Successfully killed process cgroup uid 10053 pid 5676 in 46ms
+05-27 15:32:31.430  2324  2324 I oid.coreservice: type=1400 audit(0.0:1455): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:system_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:31.432  1597  2637 I ActivityManager: START u0 {flg=0x10000000 cmp=edu.mobilesec.ctrepro/.MainActivity (has extras)} from uid 2000
+05-27 15:32:31.432  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1020 android.content.ContextWrapper.sendBroadcast:449 com.android.coreservice.TabManager.notifyClosing:413 com.android.coreservice.TabManager.updateInner:200 com.android.coreservice.TabManager.onUpdate:235 
+05-27 15:32:31.460  2324  2324 I CoreService: notifyClosing notify tab closed taskPackageName:edu.mobilesec.ctrepro
+05-27 15:32:31.483  1462  1462 I Binder:1462_1: type=1400 audit(0.0:1456): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:untrusted_app:s0:c33,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:31.483  2386  2386 I RenderThread: type=1400 audit(0.0:1457): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6869 scontext=u:r:untrusted_app:s0:c33,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:31.493  2386  2643 E EGL_emulation: tid 2643: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:31.493  2386  2643 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x763878d0f600, error=EGL_BAD_MATCH
+05-27 15:32:31.494  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:31.510  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '2386' (No space left on device); fd=24
+05-27 15:32:31.510  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:31.519  1597  1615 I ActivityManager: Start proc 5822:edu.mobilesec.ctrepro/u0a53 for activity edu.mobilesec.ctrepro/.MainActivity
+05-27 15:32:31.520  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:31.526  1751  1751 I RenderThread: type=1400 audit(0.0:1458): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6869 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:31.538  5822  5822 I Zygote  : seccomp disabled by setenforce 0
+05-27 15:32:31.539  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:31.540  5822  5822 I bilesec.ctrepr: Late-enabling -Xcheck:jni
+05-27 15:32:31.545  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:31.546  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 27 lines
+05-27 15:32:31.546  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:31.553  5822  5822 I bilesec.ctrepro: type=1400 audit(0.0:1459): avc: denied { open } for path="/data/local/cfg-zieih/app_device" dev="sdb2" ino=393551 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+05-27 15:32:31.554  5822  5822 D nativebridge: call UnloadNativeBridge! state=1
+05-27 15:32:31.557  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:31.566  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '5822' (No space left on device); fd=27
+05-27 15:32:31.570  1597  1612 I ActivityManager: Displayed edu.mobilesec.ctrepro/.MainActivity: +86ms
+05-27 15:32:31.576  1597  1597 I android.anim.lf: type=1400 audit(0.0:1460): avc: denied { call } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+05-27 15:32:31.633  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:31.673  5822  5822 I bilesec.ctrepro: type=1400 audit(0.0:1461): avc: denied { read } for name="Applications" dev="sdcardfs" ino=655362 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0 tclass=lnk_file permissive=1
+05-27 15:32:31.675  5822  5822 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:31.726  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:31.727  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 28 lines
+05-27 15:32:31.727  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:31.769  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=24
+05-27 15:32:31.769  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=24
+05-27 15:32:31.769  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=24
+05-27 15:32:31.771  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=25
+05-27 15:32:31.771  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=25
+05-27 15:32:31.771  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=25
+05-27 15:32:31.773  5822  5822 D OpenGLRenderer: Skia GL Pipeline
+05-27 15:32:31.774  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:31.809  4188  4188 I cr_CompositorSurfaceMgr: Transitioning to surface with format: -1
+05-27 15:32:31.810  5822  5822 I CT_REPRO: E01_callback_baseline | 1779867151810 | 0 | SERVICE_CONNECTED | 0 | http://198.18.0.1:8000/status/404-empty | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | component=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabsConnectionService
+05-27 15:32:31.850  5822  5845 I         : fastpipe: Connect success
+05-27 15:32:31.851  5822  5845 I         : fastpipe: Connect success
+05-27 15:32:31.851  5822  5845 D HostConnection: HostRPC::connect sucess: app=edu.mobilesec.ctrepro, pid=5822, tid=5845, this=0x76388bce2400
+05-27 15:32:31.852  5822  5845 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:edu.mobilesec.ctrepro
+05-27 15:32:31.853  5822  5845 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+05-27 15:32:31.853  5822  5845 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+05-27 15:32:31.853  5822  5845 I OpenGLRenderer: Initialized EGL, version 1.4
+05-27 15:32:31.853  5822  5845 D OpenGLRenderer: Swap behavior 1
+05-27 15:32:31.859  5822  5845 D EGL_emulation: eglCreateContext: 0x76388bc5f9c0: maj 3 min 1 rcv 4
+05-27 15:32:31.886  5822  5845 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082da
+05-27 15:32:31.886  5822  5845 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082e5
+05-27 15:32:31.888  5822  5845 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1 v1
+05-27 15:32:31.891  5822  5845 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008c29
+05-27 15:32:31.891  5822  5845 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+05-27 15:32:31.894  5822  5845 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-27 15:32:31.894  5822  5845 D vndksupport: Loading /vendor/lib64/hw/gralloc.default.so from current namespace instead of sphal namespace.
+05-27 15:32:31.899  5822  5845 E EGL_emulation: tid 5845: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:31.899  5822  5845 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x76388bd86100, error=EGL_BAD_MATCH
+05-27 15:32:31.925  5822  5822 I CT_REPRO: E01_callback_baseline | 1779867151925 | 0 | extraCallback:onWarmupCompleted | 10000 | http://198.18.0.1:8000/status/404-empty | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | bundle={}
+05-27 15:32:31.932  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:31.933  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:31.951  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '2386' (No space left on device); fd=25
+05-27 15:32:31.951  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '2669' (No space left on device); fd=25
+05-27 15:32:31.951  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '4075' (No space left on device); fd=25
+05-27 15:32:31.980  1462  2227 W SurfaceFlinger: Attempting to set client state on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-27 15:32:31.980  1462  2227 W SurfaceFlinger: Attempting to destroy on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-27 15:32:33.273  5822  5822 I CT_REPRO: E01_callback_baseline | 1779867153273 | 1 | LAUNCH_REQUESTED | 0 | http://198.18.0.1:8000/status/404-empty | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | 准备打开 Custom Tab
+05-27 15:32:33.279  1597  1608 I ActivityManager: START u0 {act=android.intent.action.VIEW dat=http://198.18.0.1:8000/... pkg=com.android.chrome cmp=com.android.chrome/com.google.android.apps.chrome.IntentDispatcher (has extras)} from uid 10053
+05-27 15:32:33.289  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:33.293  4188  4188 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@9278530
+05-27 15:32:33.293  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=24
+05-27 15:32:33.293  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=27
+05-27 15:32:33.293  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '5822' (No space left on device); fd=24
+05-27 15:32:33.293  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=27
+05-27 15:32:33.367  1597  1698 D WIFI    : got request NetworkRequest [ TRACK_DEFAULT id=42, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:33.367  1597  1698 D WIFI_UT : got request NetworkRequest [ TRACK_DEFAULT id=42, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:33.367  1597  1730 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=42, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:33.368  1597  1729 D WIFI_AWARE_FACTORY: got request NetworkRequest [ TRACK_DEFAULT id=42, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:33.368  1934  1934 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=42, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:33.434  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:33.434  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 30 lines
+05-27 15:32:33.434  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:33.504  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:33.504  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:33.516  1597  2637 I ActivityManager: START u0 {act=android.intent.action.VIEW dat=http://198.18.0.1:8000/... flg=0x2800000 pkg=com.android.chrome cmp=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabActivity (has extras)} from uid 10059
+05-27 15:32:33.525  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:33.623  4188  4188 I .android.chrome: type=1400 audit(0.0:1468): avc: denied { read } for name="Applications" dev="sdcardfs" ino=655362 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0 tclass=lnk_file permissive=1
+05-27 15:32:33.623  4188  4188 I .android.chrome: type=1400 audit(0.0:1469): avc: denied { search } for name="/" dev="vboxsf" ino=1 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+05-27 15:32:33.625  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:33.625  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:33.625  4188  4188 I cr_A11yState: Will check again after 250 milliseconds.
+05-27 15:32:33.625  4188  4188 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@480ae63
+05-27 15:32:33.626  1597  1597 I Binder:1597_F: type=1400 audit(0.0:1470): avc: denied { read } for name="Applications" dev="sdcardfs" ino=655362 scontext=u:r:system_server:s0 tcontext=u:object_r:sdcardfs:s0 tclass=lnk_file permissive=1
+05-27 15:32:33.629  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:33.636  1462  1462 I surfaceflinger: type=1400 audit(0.0:1471): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:33.639  4188  4188 W cr_ContextualSearch: No manager!
+05-27 15:32:33.640  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:33.647  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:33.648  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '5776' (No space left on device); fd=24
+05-27 15:32:33.648  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 28 lines
+05-27 15:32:33.648  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:33.648  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '5776' (No space left on device); fd=27
+05-27 15:32:33.661  5822  5822 I CT_REPRO: E01_callback_baseline | 1779867153661 | 389 | TAB_SHOWN | 5 | http://198.18.0.1:8000/status/404-empty | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=745647}
+05-27 15:32:33.673  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:33.678  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:33.678  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:33.678  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:33.678  4188  4188 I cr_A11yState: Will check again after 500 milliseconds.
+05-27 15:32:33.684  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:33.690  4366  4366 I CrGpuMain: type=1400 audit(0.0:1472): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6869 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:33.693  5822  5822 I CT_REPRO: E01_callback_baseline | 1779867153693 | 421 | NAVIGATION_STARTED | 1 | http://198.18.0.1:8000/status/404-empty | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=745692}
+05-27 15:32:33.724  4188  4235 E EGL_emulation: tid 4235: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:33.724  4188  4235 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xd6f36000, error=EGL_BAD_MATCH
+05-27 15:32:33.726  4188  4188 I cr_BrowserUiUtils: Recorded Startup.Android.FirstDrawCompletedTime = 91 ms
+05-27 15:32:33.729  1434  1434 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:33.729  1434  1434 I Zygote  : IsCopy  libcrashcatcher: 0
+05-27 15:32:33.741  1597  1615 I ActivityManager: Start proc 5862:com.android.chrome:sandboxed_process21/u0i21 for service com.android.chrome/org.chromium.content.app.SandboxedProcessService21
+05-27 15:32:33.749  4188  4188 I cr_CompositorSurfaceMgr: Transitioning to surface with format: -1
+05-27 15:32:33.750  4188  4188 I cr_CompositorSurfaceMgr: surfaceCreated format: 0
+05-27 15:32:33.754  1597  1612 I ActivityManager: Displayed com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabActivity: +472ms
+05-27 15:32:33.760  5862  5862 W nativebridge: Failed to bind-mount /data/local/cfg-zieih/ as /proc/cpuinfo: Not a directory
+05-27 15:32:33.761  5862  5862 I Zygote  : seccomp disabled by setenforce 0
+05-27 15:32:33.762  5862  5862 D nativebridge: call UnloadNativeBridge! state=1
+05-27 15:32:33.827  5862  5862 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:33.828  5862  5862 W boxed_process2: Unknown chunk type '200'.
+05-27 15:32:33.830  5862  5862 I cr_SplitCompatApp: version=138.0.7204.179 (720417927) minSdkVersion=26 isBundle=true processName=com.android.chrome:sandboxed_process21 isIsolatedProcess=true
+05-27 15:32:33.831  5862  5862 W SystemServiceRegistry: No service published for: uimode
+05-27 15:32:33.831  4188  4188 D skia    : --- Failed to create image decoder with message 'unimplemented'
+05-27 15:32:33.832  4366  4403 W chromium: [WARNING:components/viz/service/frame_sinks/root_compositor_frame_sink_impl.cc:985] Requested unsupported preferred frame interval 0.016666 s (=60.0024Hz)
+05-27 15:32:33.834  5862  5862 I cr_ChildProcessService: Creating new ChildProcessService pid=5862
+05-27 15:32:33.841  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:33.842  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:33.852  5862  5877 I cr_LibraryLoader: Successfully loaded native library
+05-27 15:32:33.853  5862  5877 I cr_CachingUmaRecorder: Flushed 2 samples from 2 histograms, 0 samples were dropped.
+05-27 15:32:33.868  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:33.869  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:33.869  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:33.869  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:33.869  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:33.869  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:33.870  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:33.871  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:33.871  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:33.871  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:33.871  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:33.871  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:33.876  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:33.876  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:33.877  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:33.877  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:33.877  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:33.877  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:33.878  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:33.878  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '5822' (No space left on device); fd=25
+05-27 15:32:33.878  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:33.878  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:33.878  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:33.879  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:33.879  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:33.879  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:33.879  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:33.879  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:33.879  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:33.879  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:33.880  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:33.880  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:33.880  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:33.880  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:33.880  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:33.881  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:33.881  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:33.881  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:33.882  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:33.882  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:33.882  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:33.882  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:33.882  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:33.883  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:33.883  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:33.883  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:33.883  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:33.883  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:33.884  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:33.900  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:33.900  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:33.900  4188  4188 I cr_A11yState: Will check again after 1000 milliseconds.
+05-27 15:32:33.902  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '5776' (No space left on device); fd=24
+05-27 15:32:33.909  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '5862' (No space left on device); fd=27
+05-27 15:32:33.910  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:33.910  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 29 lines
+05-27 15:32:33.910  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:33.912  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '5776' (No space left on device); fd=25
+05-27 15:32:33.912  1597  1889 I ActivityManager: Killing 5776:com.android.chrome:sandboxed_process20/u0a59i20 (adj 0): isolated not needed
+05-27 15:32:33.912  1597  1616 W libprocessgroup: kill(-5776, 9) failed: No such process
+05-27 15:32:33.927  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:33.927  4188  4188 I cr_E2E_DCController: setSafeAreaConstraint: false
+05-27 15:32:33.929  5822  5822 I CT_REPRO: E01_callback_baseline | 1779867153929 | 657 | NAVIGATION_FAILED | 3 | http://198.18.0.1:8000/status/404-empty | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=745908}
+05-27 15:32:33.940  1434  1434 I Zygote  : Process 5776 exited due to signal (9)
+05-27 15:32:33.941  1597  1617 E KernelCpuSpeedReader: Failed to read cpu-freq: /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state (No such file or directory)
+05-27 15:32:33.941  1597  1617 E KernelWakelockReader: neither /proc/wakelocks nor /d/wakeup_sources exists
+05-27 15:32:33.941  1597  1617 W BatteryStatsImpl: Couldn't get kernel wake lock stats
+05-27 15:32:33.948  1597  1613 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+05-27 15:32:33.948  1597  1613 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+05-27 15:32:33.956  1597  1616 W libprocessgroup: kill(-5776, 9) failed: No such process
+05-27 15:32:33.956  1597  1616 I libprocessgroup: Successfully killed process cgroup uid 99020 pid 5776 in 44ms
+05-27 15:32:33.957  5822  5822 I CT_REPRO: E01_callback_baseline | 1779867153957 | 685 | NAVIGATION_FINISHED | 2 | http://198.18.0.1:8000/status/404-empty | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=745956}
+05-27 15:32:33.967  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '2423' (No space left on device); fd=24
+05-27 15:32:33.968  1597  2637 W SchedPolicy: add_tid_to_cgroup failed to write '2423' (No space left on device); fd=25
+05-27 15:32:33.970  4188  4188 I cr_CustomTab: To create AuxiliarySearchController on deferred startup.
+05-27 15:32:34.178  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:34.178  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:34.178  4188  4188 I cr_A11yState: Will check again after 2000 milliseconds.
+05-27 15:32:34.901  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:34.901  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:34.901  4188  4188 I cr_A11yState: Will check again after 4000 milliseconds.
+05-27 15:32:34.946  1459  1459 I ldinit  : type=1400 audit(0.0:1482): avc: denied { read } for name="partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-27 15:32:34.946  1459  1459 I ldinit  : type=1400 audit(0.0:1483): avc: denied { open } for path="/proc/partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-27 15:32:34.946  1459  1459 I ldinit  : type=1400 audit(0.0:1484): avc: denied { getattr } for path="/proc/partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-27 15:32:36.183  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:36.183  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:36.183  4188  4188 I cr_A11yState: Max delay reached. Send information as is.
+05-27 15:32:36.184  4188  4188 I cr_A11yState: Informing listeners of changes.
+05-27 15:32:36.184  4188  4188 I cr_A11yState: New AccessibilityState: State{isComplexUserInteractionServiceEnabled=true, isTouchExplorationEnabled=false, isPerformGesturesEnabled=false, isAnyAccessibilityServiceEnabled=true, isAccessibilityToolPresent=true, isTextShowPasswordEnabled=true, isOnlyAutofillRunning=false, isOnlyPasswordManagersEnabled=false, isKnownScreenReaderEnabled=false}
+05-27 15:32:38.902  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:38.902  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:38.902  4188  4188 I cr_A11yState: Will check again after 250 milliseconds.
+05-27 15:32:39.168  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:39.168  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:39.168  4188  4188 I cr_A11yState: Will check again after 500 milliseconds.
+05-27 15:32:39.510  1462  1462 I Binder:1462_2: type=1400 audit(0.0:1485): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:shell:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:39.510  5913  5913 I screencap: type=1400 audit(0.0:1486): avc: denied { open } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:shell:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:39.513  5913  5913 I screencap: type=1400 audit(0.0:1487): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6864 scontext=u:r:shell:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:39.513  5913  5913 I screencap: type=1400 audit(0.0:1488): avc: denied { open } for path="/data/local/cfg-zieih/gl_force" dev="sdb2" ino=393567 scontext=u:r:shell:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+05-27 15:32:39.513  5913  5913 E cutils-trace: Error opening trace file: No such file or directory (2)
+05-27 15:32:39.514  5913  5913 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-27 15:32:39.514  5913  5913 D vndksupport: Loading /vendor/lib64/hw/gralloc.default.so from current namespace instead of sphal namespace.
+05-27 15:32:39.517  5913  5913 I         : fastpipe: Connect success
+05-27 15:32:39.518  5913  5913 I         : fastpipe: Connect success
+05-27 15:32:39.519  5913  5913 D HostConnection: HostRPC::connect sucess: app=screencap, pid=5913, tid=5913, this=0x763893ee4540
+05-27 15:32:39.519  5913  5913 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:screencap
+05-27 15:32:39.650  2577  2577 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /storage/emulated/0/e01_status_404_empty_localnet.png
+05-27 15:32:39.669  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:39.669  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:39.669  4188  4188 I cr_A11yState: Will check again after 1000 milliseconds.
+05-27 15:32:39.991  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:39.991  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 24 lines
+05-27 15:32:39.991  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:40.007  5923  5923 I appproc : app_process main with argv: /system/bin com.android.commands.input.Input keyevent 4 
+05-27 15:32:40.007  5923  5923 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+05-27 15:32:40.009  5923  5923 E cutils-trace: Error opening trace file: No such file or directory (2)
+05-27 15:32:40.020  5923  5923 V libnb   : enter native_bridge2_isCompatibleWith 3
+05-27 15:32:40.033  5923  5923 I libnb   : Found /system/lib64/libhoudini.so version 3
+05-27 15:32:40.063  5923  5923 I main    : type=1400 audit(0.0:1489): avc: denied { open } for path="/data/local/cfg-zieih/app_xpt" dev="sdb2" ino=393559 scontext=u:r:shell:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+05-27 15:32:40.063  5923  5923 I main    : type=1400 audit(0.0:1490): avc: denied { mounton } for path="/proc/cpuinfo" dev="proc" ino=4026531992 scontext=u:r:shell:s0 tcontext=u:object_r:proc_cpuinfo:s0 tclass=file permissive=1
+05-27 15:32:40.065  5923  5923 I app_process: The ClassLoaderContext is a special shared library.
+05-27 15:32:40.065  5923  5923 W app_process: Could not create mount namespace.
+05-27 15:32:40.065  5923  5923 D nativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86_64
+05-27 15:32:40.065  5923  5923 W nativebridge: Failed to bind-mount /data/local/cfg-zieih/ as /proc/cpuinfo: No such file or directory
+05-27 15:32:40.065  5923  5923 W nativebridge: Failed to bind-mount /system/lib64/x86_64/cpuinfo as /proc/cpuinfo: Operation not permitted
+05-27 15:32:40.065  5923  5923 D nativebridge: call UnloadNativeBridge! state=2
+05-27 15:32:40.087  5923  5923 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+05-27 15:32:40.087  5923  5923 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=752087, downTime=752087, deviceId=-1, source=0x101 }
+05-27 15:32:40.101  5923  5923 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=752087, downTime=752087, deviceId=-1, source=0x101 }
+05-27 15:32:40.107  1597  1614 D AutofillManagerService: onBackKeyPressed()
+05-27 15:32:40.114  5923  5923 D AndroidRuntime: Shutting down VM
+05-27 15:32:40.149  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '5822' (No space left on device); fd=27
+05-27 15:32:40.149  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '5862' (No space left on device); fd=24
+05-27 15:32:40.149  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=24
+05-27 15:32:40.149  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=24
+05-27 15:32:40.160  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:40.170  2324  2324 I oid.coreservice: type=1400 audit(0.0:1491): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6869 scontext=u:r:system_app:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:40.176  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:40.201  5822  5845 E EGL_emulation: tid 5845: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:40.201  5822  5845 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x76388bd86100, error=EGL_BAD_MATCH
+05-27 15:32:40.224  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:40.230  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:40.338  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=25
+05-27 15:32:40.338  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '5862' (No space left on device); fd=25
+05-27 15:32:40.338  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=25
+05-27 15:32:40.339  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=25
+05-27 15:32:40.344  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:40.344  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 23 lines
+05-27 15:32:40.344  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:40.354  4188  4188 E cr_CompositorSurfaceMgr: surfaceDestroyed format : 4
+05-27 15:32:40.361  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:40.362  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:40.362  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:40.362  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:40.362  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:40.362  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:40.380  4188  4250 I cr_BindingManager: onTrimMemory: level=20, size=1
+05-27 15:32:40.383  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:40.383  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:40.383  4188  4188 I cr_A11yState: Will check again after 2000 milliseconds.
+05-27 15:32:40.384  5822  5822 I CT_REPRO: E01_callback_baseline | 1779867160384 | 7112 | TAB_HIDDEN | 6 | http://198.18.0.1:8000/status/404-empty | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=752383}
+05-27 15:32:40.386  1461  1461 E lowmemorykiller: Error writing /proc/5862/oom_score_adj; errno=22
+05-27 15:32:40.386  1597  2083 I ActivityManager: Killing 5862:com.android.chrome:sandboxed_process21/u0a59i21 (adj 0): isolated not needed
+05-27 15:32:40.386  1597  1616 W libprocessgroup: kill(-5862, 9) failed: No such process
+05-27 15:32:40.389  4188  4188 I cr_CompositorSurfaceMgr: SurfaceState : detach from parent : 0
+05-27 15:32:40.391  4188  4188 W cr_ContextualSearch: Warning, the 0 state was aborted.
+05-27 15:32:40.392  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:40.403  1462  1462 W SurfaceFlinger: couldn't log to binary event log: overflow.
+05-27 15:32:40.407  1434  1434 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:40.407  1434  1434 I Zygote  : IsCopy  libcrashcatcher: 0
+05-27 15:32:40.410  1434  1434 I Zygote  : Process 5862 exited cleanly (0)
+05-27 15:32:40.411  1597  1617 E KernelCpuSpeedReader: Failed to read cpu-freq: /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state (No such file or directory)
+05-27 15:32:40.411  1597  1617 E KernelWakelockReader: neither /proc/wakelocks nor /d/wakeup_sources exists
+05-27 15:32:40.411  1597  1617 W BatteryStatsImpl: Couldn't get kernel wake lock stats
+05-27 15:32:40.418  1597  1613 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+05-27 15:32:40.418  1597  1613 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+05-27 15:32:40.419  1597  1615 I ActivityManager: Start proc 5942:com.android.chrome:sandboxed_process22/u0i22 for service com.android.chrome/org.chromium.content.app.SandboxedProcessService22
+05-27 15:32:40.423  5942  5942 W nativebridge: Failed to bind-mount /data/local/cfg-zieih/ as /proc/cpuinfo: Not a directory
+05-27 15:32:40.425  5942  5942 I Zygote  : seccomp disabled by setenforce 0
+05-27 15:32:40.425  5942  5942 D nativebridge: call UnloadNativeBridge! state=1
+05-27 15:32:40.430  1597  1616 W libprocessgroup: kill(-5862, 9) failed: No such process
+05-27 15:32:40.430  1597  1616 I libprocessgroup: Successfully killed process cgroup uid 99021 pid 5862 in 43ms
+05-27 15:32:40.431  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '5942' (No space left on device); fd=25
+05-27 15:32:40.433  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '2423' (No space left on device); fd=24
+05-27 15:32:40.440  1597  2083 W SchedPolicy: add_tid_to_cgroup failed to write '2423' (No space left on device); fd=25
+05-27 15:32:40.469  5942  5942 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:40.470  5942  5942 W boxed_process2: Unknown chunk type '200'.
+05-27 15:32:40.473  5942  5942 I cr_SplitCompatApp: version=138.0.7204.179 (720417927) minSdkVersion=26 isBundle=true processName=com.android.chrome:sandboxed_process22 isIsolatedProcess=true
+05-27 15:32:40.474  5942  5942 W SystemServiceRegistry: No service published for: uimode
+05-27 15:32:40.475  5942  5942 I cr_ChildProcessService: Creating new ChildProcessService pid=5942
+05-27 15:32:40.488  5942  5963 I cr_LibraryLoader: Successfully loaded native library
+05-27 15:32:40.488  5942  5963 I cr_CachingUmaRecorder: Flushed 2 samples from 2 histograms, 0 samples were dropped.
+05-27 15:32:40.672  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:40.672  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:40.672  4188  4188 I cr_A11yState: Will check again after 4000 milliseconds.
+05-27 15:32:40.696  1455  1455 I sensors@1.0-ser: type=1400 audit(0.0:1496): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6865 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:41.780  5822  5822 I RenderThread: type=1400 audit(0.0:1497): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:41.800  1462  1462 I surfaceflinger: type=1400 audit(0.0:1498): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:42.171  1597  1608 D ActivityManager: Task: com.android.launcher3.Launcher, ID: 2, Base: com.android.launcher3.Launcher, packageName: com.android.launcher3
+05-27 15:32:42.171  1597  1608 I ActivityManager: Force stopping edu.mobilesec.ctrepro appid=10053 user=0: from pid 5974
+05-27 15:32:42.171  1597  1608 I ActivityManager: Killing 5822:edu.mobilesec.ctrepro/u0a53 (adj 0): stop edu.mobilesec.ctrepro
+05-27 15:32:42.171  1597  1616 W libprocessgroup: kill(-5822, 9) failed: No such process
+05-27 15:32:42.171  1597  1608 W ActivityManager: Force removing ActivityRecord{65fe212 u0 edu.mobilesec.ctrepro/.MainActivity t11}: app died, no saved state
+05-27 15:32:42.174  1462  1537 W SurfaceFlinger: Attempting to destroy on removed layer: AppWindowToken{292a3e0 token=Token{9a0ede3 ActivityRecord{65fe212 u0 edu.mobilesec.ctrepro/.MainActivity t11}}}#0
+05-27 15:32:42.175  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '2386' (No space left on device); fd=27
+05-27 15:32:42.175  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '2669' (No space left on device); fd=24
+05-27 15:32:42.175  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '4075' (No space left on device); fd=24
+05-27 15:32:42.178  1934  1934 D CarrierSvcBindHelper: No carrier app for: 0
+05-27 15:32:42.179  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:42.185  2386  2643 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+05-27 15:32:42.191  1433  1433 I Zygote  : Process 5822 exited due to signal (9)
+05-27 15:32:42.193  1597  1622 W ActivityManager: setHasOverlayUi called on unknown pid: 5822
+05-27 15:32:42.216  1597  1616 W libprocessgroup: kill(-5822, 9) failed: No such process
+05-27 15:32:42.216  1597  1616 I libprocessgroup: Successfully killed process cgroup uid 10053 pid 5822 in 45ms
+05-27 15:32:42.237  1597  1889 I ActivityManager: START u0 {flg=0x10000000 cmp=edu.mobilesec.ctrepro/.MainActivity (has extras)} from uid 2000
+05-27 15:32:42.237  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1020 android.content.ContextWrapper.sendBroadcast:449 com.android.coreservice.TabManager.notifyClosing:413 com.android.coreservice.TabManager.updateInner:200 com.android.coreservice.TabManager.onUpdate:235 
+05-27 15:32:42.284  2324  2324 I CoreService: notifyClosing notify tab closed taskPackageName:edu.mobilesec.ctrepro
+05-27 15:32:42.285  2324  2324 W oid.coreservic: Unknown chunk type '200'.
+05-27 15:32:42.297  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:42.298  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 28 lines
+05-27 15:32:42.298  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:42.300  1449  1449 I HwBinder:1449_2: type=1400 audit(0.0:1499): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6867 scontext=u:r:hal_graphics_allocator_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:42.303  1449  1449 I HwBinder:1449_2: type=1400 audit(0.0:1500): avc: denied { read write } for name="fastpipe" dev="tmpfs" ino=3085 scontext=u:r:hal_graphics_allocator_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:42.303  1449  1449 I HwBinder:1449_2: type=1400 audit(0.0:1501): avc: denied { open } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:hal_graphics_allocator_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:42.303  1449  1449 I HwBinder:1449_2: type=1400 audit(0.0:1502): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:42.303  1462  1462 I Binder:1462_3: type=1400 audit(0.0:1503): avc: denied { getattr } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:42.303  1462  1462 I Binder:1462_3: type=1400 audit(0.0:1504): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:system_server:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:42.303  1597  1597 I android.anim: type=1400 audit(0.0:1505): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=686e scontext=u:r:system_server:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:42.313  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:42.320  2386  2643 E EGL_emulation: tid 2643: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:42.320  2386  2643 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x763878e54400, error=EGL_BAD_MATCH
+05-27 15:32:42.332  1597  1609 W SchedPolicy: add_tid_to_cgroup failed to write '2386' (No space left on device); fd=24
+05-27 15:32:42.332  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:42.339  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:42.352  5984  5984 I Zygote  : seccomp disabled by setenforce 0
+05-27 15:32:42.353  5984  5984 I bilesec.ctrepr: Late-enabling -Xcheck:jni
+05-27 15:32:42.359  1597  1615 I ActivityManager: Start proc 5984:edu.mobilesec.ctrepro/u0a53 for activity edu.mobilesec.ctrepro/.MainActivity
+05-27 15:32:42.360  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:42.364  5984  5984 D nativebridge: call UnloadNativeBridge! state=1
+05-27 15:32:42.366  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:42.374  1597  3111 W SchedPolicy: add_tid_to_cgroup failed to write '5984' (No space left on device); fd=27
+05-27 15:32:42.377  1597  1612 I ActivityManager: Displayed edu.mobilesec.ctrepro/.MainActivity: +109ms
+05-27 15:32:42.383  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:42.383  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:42.383  4188  4188 I cr_A11yState: Max delay reached. Send information as is.
+05-27 15:32:42.383  4188  4188 I cr_A11yState: Informing listeners of changes.
+05-27 15:32:42.383  4188  4188 I cr_A11yState: New AccessibilityState: State{isComplexUserInteractionServiceEnabled=true, isTouchExplorationEnabled=false, isPerformGesturesEnabled=false, isAnyAccessibilityServiceEnabled=true, isAccessibilityToolPresent=true, isTextShowPasswordEnabled=true, isOnlyAutofillRunning=false, isOnlyPasswordManagersEnabled=false, isKnownScreenReaderEnabled=false}
+05-27 15:32:42.428  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:42.467  5984  5984 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:42.499  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:42.499  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 26 lines
+05-27 15:32:42.499  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:42.568  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=24
+05-27 15:32:42.568  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=24
+05-27 15:32:42.568  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=24
+05-27 15:32:42.569  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=25
+05-27 15:32:42.569  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=25
+05-27 15:32:42.569  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=25
+05-27 15:32:42.572  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:42.572  5984  5984 D OpenGLRenderer: Skia GL Pipeline
+05-27 15:32:42.603  4188  4188 I cr_CompositorSurfaceMgr: Transitioning to surface with format: -1
+05-27 15:32:42.604  5984  5984 I CT_REPRO: E01_callback_baseline | 1779867162603 | 0 | SERVICE_CONNECTED | 0 | http://198.18.0.1:8000/status/404-body | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | component=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabsConnectionService
+05-27 15:32:42.638  5984  6007 I         : fastpipe: Connect success
+05-27 15:32:42.639  5984  6007 I         : fastpipe: Connect success
+05-27 15:32:42.639  5984  5984 I CT_REPRO: E01_callback_baseline | 1779867162639 | 0 | extraCallback:onWarmupCompleted | 10000 | http://198.18.0.1:8000/status/404-body | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | bundle={}
+05-27 15:32:42.639  5984  6007 D HostConnection: HostRPC::connect sucess: app=edu.mobilesec.ctrepro, pid=5984, tid=6007, this=0x76388bccb400
+05-27 15:32:42.640  5984  6007 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:edu.mobilesec.ctrepro
+05-27 15:32:42.641  5984  6007 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+05-27 15:32:42.641  5984  6007 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+05-27 15:32:42.641  5984  6007 I OpenGLRenderer: Initialized EGL, version 1.4
+05-27 15:32:42.641  5984  6007 D OpenGLRenderer: Swap behavior 1
+05-27 15:32:42.646  5984  6007 D EGL_emulation: eglCreateContext: 0x76388bc5f6c0: maj 3 min 1 rcv 4
+05-27 15:32:42.671  5984  6007 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082da
+05-27 15:32:42.671  5984  6007 E eglCodecCommon: glUtilsParamSize: unknow param 0x000082e5
+05-27 15:32:42.674  5984  6007 D HostConnection: ExtendedRCEncoderContext GL_VERSION return OpenGL ES 3.1 v1
+05-27 15:32:42.675  5984  6007 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008c29
+05-27 15:32:42.675  5984  6007 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+05-27 15:32:42.678  5984  6007 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-27 15:32:42.678  5984  6007 D vndksupport: Loading /vendor/lib64/hw/gralloc.default.so from current namespace instead of sphal namespace.
+05-27 15:32:42.683  5984  6007 E EGL_emulation: tid 6007: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:42.683  5984  6007 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x76388bc27c80, error=EGL_BAD_MATCH
+05-27 15:32:42.711  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:42.712  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:42.725  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '2386' (No space left on device); fd=25
+05-27 15:32:42.726  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '2669' (No space left on device); fd=25
+05-27 15:32:42.726  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '4075' (No space left on device); fd=25
+05-27 15:32:42.772  1462  1537 W SurfaceFlinger: Attempting to set client state on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-27 15:32:42.772  1462  1537 W SurfaceFlinger: Attempting to destroy on removed layer: Splash Screen edu.mobilesec.ctrepro#0
+05-27 15:32:44.105  5984  5984 I CT_REPRO: E01_callback_baseline | 1779867164104 | 0 | LAUNCH_REQUESTED | 0 | http://198.18.0.1:8000/status/404-body | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | 准备打开 Custom Tab
+05-27 15:32:44.111  1597  1881 I ActivityManager: START u0 {act=android.intent.action.VIEW dat=http://198.18.0.1:8000/... pkg=com.android.chrome cmp=com.android.chrome/com.google.android.apps.chrome.IntentDispatcher (has extras)} from uid 10053
+05-27 15:32:44.120  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:44.124  4188  4188 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@1f6f8e
+05-27 15:32:44.124  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=24
+05-27 15:32:44.124  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=27
+05-27 15:32:44.124  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '5984' (No space left on device); fd=24
+05-27 15:32:44.124  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=27
+05-27 15:32:44.202  1597  1698 D WIFI    : got request NetworkRequest [ TRACK_DEFAULT id=44, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:44.202  1597  1730 D Ethernet: got request NetworkRequest [ TRACK_DEFAULT id=44, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:44.202  1597  1698 D WIFI_UT : got request NetworkRequest [ TRACK_DEFAULT id=44, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:44.202  1597  1729 D WIFI_AWARE_FACTORY: got request NetworkRequest [ TRACK_DEFAULT id=44, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:44.203  1934  1934 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=44, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10059] ] with score 60
+05-27 15:32:44.217  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:44.217  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 28 lines
+05-27 15:32:44.217  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:44.312  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:44.312  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:44.325  1597  1881 I ActivityManager: START u0 {act=android.intent.action.VIEW dat=http://198.18.0.1:8000/... flg=0x2800000 pkg=com.android.chrome cmp=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabActivity (has extras)} from uid 10059
+05-27 15:32:44.333  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:44.403  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:44.403  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 31 lines
+05-27 15:32:44.403  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:44.423  4188  4188 I .android.chrome: type=1400 audit(0.0:1517): avc: denied { read } for name="Applications" dev="sdcardfs" ino=655362 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0 tclass=lnk_file permissive=1
+05-27 15:32:44.423  4188  4188 I .android.chrome: type=1400 audit(0.0:1518): avc: denied { search } for name="/" dev="vboxsf" ino=1 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+05-27 15:32:44.426  1597  1597 I Binder:1597_6: type=1400 audit(0.0:1519): avc: denied { read } for name="Applications" dev="sdcardfs" ino=655362 scontext=u:r:system_server:s0 tcontext=u:object_r:sdcardfs:s0 tclass=lnk_file permissive=1
+05-27 15:32:44.427  4188  4188 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@ed7e0f9
+05-27 15:32:44.430  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:44.437  4188  4188 W cr_ContextualSearch: No manager!
+05-27 15:32:44.438  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:44.444  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '5942' (No space left on device); fd=24
+05-27 15:32:44.446  5984  5984 I CT_REPRO: E01_callback_baseline | 1779867164446 | 342 | TAB_SHOWN | 5 | http://198.18.0.1:8000/status/404-body | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=756444}
+05-27 15:32:44.451  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '5942' (No space left on device); fd=27
+05-27 15:32:44.469  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:44.477  4188  4188 W cr_ActivityDispatcher: CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+05-27 15:32:44.478  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:44.478  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:44.478  4188  4188 I cr_A11yState: Will check again after 250 milliseconds.
+05-27 15:32:44.483  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:44.492  5984  5984 I CT_REPRO: E01_callback_baseline | 1779867164492 | 388 | NAVIGATION_STARTED | 1 | http://198.18.0.1:8000/status/404-body | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=756491}
+05-27 15:32:44.510  1462  1462 I Binder:1462_3: type=1400 audit(0.0:1520): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:untrusted_app:s0:c59,c256,c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:44.517  4188  4188 I cr_BrowserUiUtils: Recorded Startup.Android.FirstDrawCompletedTime = 85 ms
+05-27 15:32:44.519  4188  4235 E EGL_emulation: tid 4235: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:44.519  4188  4235 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xd68ddae0, error=EGL_BAD_MATCH
+05-27 15:32:44.542  4188  4188 I cr_E2E_DCController: setSafeAreaConstraint: false
+05-27 15:32:44.542  1597  1612 I ActivityManager: Displayed com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabActivity: +429ms
+05-27 15:32:44.543  5984  5984 I CT_REPRO: E01_callback_baseline | 1779867164543 | 439 | NAVIGATION_FINISHED | 2 | http://198.18.0.1:8000/status/404-body | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=756542}
+05-27 15:32:44.544  4188  4188 I cr_CompositorSurfaceMgr: Transitioning to surface with format: -1
+05-27 15:32:44.545  4188  4188 I cr_CompositorSurfaceMgr: surfaceCreated format: 0
+05-27 15:32:44.626  4188  4188 D skia    : --- Failed to create image decoder with message 'unimplemented'
+05-27 15:32:44.628  4366  4403 W chromium: [WARNING:components/viz/service/frame_sinks/root_compositor_frame_sink_impl.cc:985] Requested unsupported preferred frame interval 0.016666 s (=60.0024Hz)
+05-27 15:32:44.637  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:44.637  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 28 lines
+05-27 15:32:44.637  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:44.637  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:44.638  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:44.661  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:44.662  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:44.662  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:44.662  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:44.662  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:44.662  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:44.664  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:44.664  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:44.664  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:44.664  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:44.664  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:44.665  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:44.667  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:44.667  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:44.667  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:44.667  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:44.667  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:44.667  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:44.668  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:44.668  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:44.668  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:44.668  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:44.668  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:44.668  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:44.669  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:44.669  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:44.669  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:44.669  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:44.669  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:44.670  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:44.670  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:44.670  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:44.670  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:44.670  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:44.670  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:44.670  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:44.671  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:44.671  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:44.671  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:44.671  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:44.671  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:44.671  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:44.672  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:44.672  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:44.672  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:44.672  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:44.672  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:44.673  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:44.676  1597  1597 I Binder:1597_1: type=1400 audit(0.0:1521): avc: denied { call } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+05-27 15:32:44.678  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:44.678  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:44.678  4188  4188 I cr_A11yState: Will check again after 500 milliseconds.
+05-27 15:32:44.680  4188  4188 I cr_CustomTab: To create AuxiliarySearchController on deferred startup.
+05-27 15:32:44.681  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '5984' (No space left on device); fd=25
+05-27 15:32:44.711  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:44.728  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:44.728  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:44.728  4188  4188 I cr_A11yState: Will check again after 1000 milliseconds.
+05-27 15:32:44.740  2366  2406 I mit.droidbotap: Waiting for a blocking GC ProfileSaver
+05-27 15:32:45.180  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:45.180  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:45.180  4188  4188 I cr_A11yState: Will check again after 2000 milliseconds.
+05-27 15:32:45.728  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:45.728  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:45.728  4188  4188 I cr_A11yState: Will check again after 4000 milliseconds.
+05-27 15:32:47.185  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:47.185  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:47.185  4188  4188 I cr_A11yState: Max delay reached. Send information as is.
+05-27 15:32:47.185  4188  4188 I cr_A11yState: Informing listeners of changes.
+05-27 15:32:47.185  4188  4188 I cr_A11yState: New AccessibilityState: State{isComplexUserInteractionServiceEnabled=true, isTouchExplorationEnabled=false, isPerformGesturesEnabled=false, isAnyAccessibilityServiceEnabled=true, isAccessibilityToolPresent=true, isTextShowPasswordEnabled=true, isOnlyAutofillRunning=false, isOnlyPasswordManagersEnabled=false, isKnownScreenReaderEnabled=false}
+05-27 15:32:48.573  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:48.574  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:48.574  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:48.574  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:48.574  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:48.574  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:48.575  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:48.575  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:48.575  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:48.575  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:48.575  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:48.575  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:48.576  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ef
+05-27 15:32:48.576  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf2
+05-27 15:32:48.576  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf3
+05-27 15:32:48.577  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x00000cf4
+05-27 15:32:48.577  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806d
+05-27 15:32:48.577  4366  4390 E eglCodecCommon: glUtilsParamSize: unknow param 0x0000806e
+05-27 15:32:49.740  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:49.740  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:49.740  4188  4188 I cr_A11yState: Will check again after 250 milliseconds.
+05-27 15:32:50.001  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:50.001  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:50.002  4188  4188 I cr_A11yState: Will check again after 500 milliseconds.
+05-27 15:32:50.320  1462  1462 I Binder:1462_4: type=1400 audit(0.0:1526): avc: denied { read write } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:shell:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:50.323  6053  6053 I screencap: type=1400 audit(0.0:1527): avc: denied { open } for path="/dev/fastpipe" dev="tmpfs" ino=3085 scontext=u:r:shell:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:50.323  6053  6053 I screencap: type=1400 audit(0.0:1528): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6864 scontext=u:r:shell:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:50.326  6053  6053 E cutils-trace: Error opening trace file: No such file or directory (2)
+05-27 15:32:50.326  6053  6053 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-27 15:32:50.327  6053  6053 D vndksupport: Loading /vendor/lib64/hw/gralloc.default.so from current namespace instead of sphal namespace.
+05-27 15:32:50.330  6053  6053 I screencap: type=1400 audit(0.0:1529): avc: denied { open } for path="/data/local/cfg-zieih/gl_force" dev="sdb2" ino=393567 scontext=u:r:shell:s0 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1
+05-27 15:32:50.331  6053  6053 I         : fastpipe: Connect success
+05-27 15:32:50.332  6053  6053 I         : fastpipe: Connect success
+05-27 15:32:50.332  6053  6053 D HostConnection: HostRPC::connect sucess: app=screencap, pid=6053, tid=6053, this=0x763893ee4540
+05-27 15:32:50.333  6053  6053 D HostConnection: queryAndSetGLESMaxVersion select gles-version: 3.1 hostGLVersion:46 process:screencap
+05-27 15:32:50.477  2577  2577 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /storage/emulated/0/e01_status_404_body_localnet.png
+05-27 15:32:50.506  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:50.506  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:50.506  4188  4188 I cr_A11yState: Will check again after 1000 milliseconds.
+05-27 15:32:50.896  6063  6063 I appproc : app_process main with argv: /system/bin com.android.commands.input.Input keyevent 4 
+05-27 15:32:50.896  6063  6063 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+05-27 15:32:50.898  6063  6063 E cutils-trace: Error opening trace file: No such file or directory (2)
+05-27 15:32:50.908  6063  6063 V libnb   : enter native_bridge2_isCompatibleWith 3
+05-27 15:32:50.917  6063  6063 I libnb   : Found /system/lib64/libhoudini.so version 3
+05-27 15:32:50.930  6063  6063 I main    : type=1400 audit(0.0:1530): avc: denied { mounton } for path="/proc/cpuinfo" dev="proc" ino=4026531992 scontext=u:r:shell:s0 tcontext=u:object_r:proc_cpuinfo:s0 tclass=file permissive=1
+05-27 15:32:50.932  6063  6063 I app_process: The ClassLoaderContext is a special shared library.
+05-27 15:32:50.932  6063  6063 W app_process: Could not create mount namespace.
+05-27 15:32:50.932  6063  6063 D nativebridge: PreInitializeNativeBridge name=unknown instruction_set=x86_64
+05-27 15:32:50.933  6063  6063 W nativebridge: Failed to bind-mount /data/local/cfg-zieih/ as /proc/cpuinfo: No such file or directory
+05-27 15:32:50.933  6063  6063 W nativebridge: Failed to bind-mount /system/lib64/x86_64/cpuinfo as /proc/cpuinfo: Operation not permitted
+05-27 15:32:50.933  6063  6063 D nativebridge: call UnloadNativeBridge! state=2
+05-27 15:32:50.948  6063  6063 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+05-27 15:32:50.948  6063  6063 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=762948, downTime=762948, deviceId=-1, source=0x101 }
+05-27 15:32:50.965  6063  6063 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=762948, downTime=762948, deviceId=-1, source=0x101 }
+05-27 15:32:50.971  1597  1614 D AutofillManagerService: onBackKeyPressed()
+05-27 15:32:50.980  6063  6063 D AndroidRuntime: Shutting down VM
+05-27 15:32:51.024  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '5984' (No space left on device); fd=27
+05-27 15:32:51.024  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '5942' (No space left on device); fd=24
+05-27 15:32:51.024  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=24
+05-27 15:32:51.024  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=24
+05-27 15:32:51.026  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:45 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:51.065  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:51.094  5984  6007 E EGL_emulation: tid 6007: eglSurfaceAttrib(1504): error 0x3009 (EGL_BAD_MATCH)
+05-27 15:32:51.094  5984  6007 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0x76388bc27c80, error=EGL_BAD_MATCH
+05-27 15:32:51.116  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:51.117  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:70 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:51.117  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:51.118  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 27 lines
+05-27 15:32:51.118  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:51.218  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '2959' (No space left on device); fd=25
+05-27 15:32:51.219  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '5942' (No space left on device); fd=25
+05-27 15:32:51.219  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '4188' (No space left on device); fd=25
+05-27 15:32:51.219  1597  1613 W SchedPolicy: add_tid_to_cgroup failed to write '4366' (No space left on device); fd=25
+05-27 15:32:51.233  4188  4188 E cr_CompositorSurfaceMgr: surfaceDestroyed format : 4
+05-27 15:32:51.257  4188  4250 I cr_BindingManager: onTrimMemory: level=20, size=1
+05-27 15:32:51.261  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:51.261  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:51.261  4188  4188 I cr_A11yState: Will check again after 2000 milliseconds.
+05-27 15:32:51.262  5984  5984 I CT_REPRO: E01_callback_baseline | 1779867171262 | 7158 | TAB_HIDDEN | 6 | http://198.18.0.1:8000/status/404-body | com.android.chrome | Android 9 API 28 | 138.0.7204.179 | extras={timestampUptimeMillis=763262}
+05-27 15:32:51.264  1461  1461 E lowmemorykiller: Error writing /proc/5942/oom_score_adj; errno=22
+05-27 15:32:51.264  1597  3111 I ActivityManager: Killing 5942:com.android.chrome:sandboxed_process22/u0a59i22 (adj 0): isolated not needed
+05-27 15:32:51.264  1597  1616 W libprocessgroup: kill(-5942, 9) failed: No such process
+05-27 15:32:51.274  4188  4188 I cr_CompositorSurfaceMgr: SurfaceState : detach from parent : 0
+05-27 15:32:51.276  4188  4188 W cr_ContextualSearch: Warning, the 0 state was aborted.
+05-27 15:32:51.277  2324  2324 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1531 android.content.ContextWrapper.startService:664 android.content.ContextWrapper.startService:664 com.android.coreservice.CoreBroadcastReceiver.onReceive:54 android.app.ActivityThread.handleReceiver:3424 
+05-27 15:32:51.282  1462  1462 W SurfaceFlinger: couldn't log to binary event log: overflow.
+05-27 15:32:51.284  1434  1434 I Zygote  : Process 5942 exited cleanly (0)
+05-27 15:32:51.291  1597  1617 E KernelCpuSpeedReader: Failed to read cpu-freq: /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state (No such file or directory)
+05-27 15:32:51.291  1597  1617 E KernelWakelockReader: neither /proc/wakelocks nor /d/wakeup_sources exists
+05-27 15:32:51.291  1597  1617 W BatteryStatsImpl: Couldn't get kernel wake lock stats
+05-27 15:32:51.295  1434  1434 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:51.296  1434  1434 I Zygote  : IsCopy  libcrashcatcher: 0
+05-27 15:32:51.298  1597  1613 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+05-27 15:32:51.298  1597  1613 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+05-27 15:32:51.302  1597  1615 I ActivityManager: Start proc 6082:com.android.chrome:sandboxed_process23/u0i23 for service com.android.chrome/org.chromium.content.app.SandboxedProcessService23
+05-27 15:32:51.311  1597  1616 W libprocessgroup: kill(-5942, 9) failed: No such process
+05-27 15:32:51.311  1597  1616 I libprocessgroup: Successfully killed process cgroup uid 99022 pid 5942 in 46ms
+05-27 15:32:51.311  6082  6082 W nativebridge: Failed to bind-mount /data/local/cfg-zieih/ as /proc/cpuinfo: Not a directory
+05-27 15:32:51.312  6082  6082 I Zygote  : seccomp disabled by setenforce 0
+05-27 15:32:51.313  6082  6082 D nativebridge: call UnloadNativeBridge! state=1
+05-27 15:32:51.316  1597  1881 W SchedPolicy: add_tid_to_cgroup failed to write '2423' (No space left on device); fd=24
+05-27 15:32:51.326  1597  1889 W SchedPolicy: add_tid_to_cgroup failed to write '6082' (No space left on device); fd=25
+05-27 15:32:51.327  1597  1608 W SchedPolicy: add_tid_to_cgroup failed to write '2423' (No space left on device); fd=25
+05-27 15:32:51.363  6082  6082 I boxed_process23: type=1400 audit(0.0:1542): avc: denied { getattr } for path="/data/data/com.android.chrome" dev="sdb2" ino=1048947 scontext=u:r:isolated_app:s0:c23,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c59,c256,c512,c768 tclass=dir permissive=1
+05-27 15:32:51.370  6082  6082 D libnativeloader: CrashArm64 config not exist or not readable: /system/vendor/firmware_mnt/zieih/CrashArm64
+05-27 15:32:51.371  6082  6082 W boxed_process2: Unknown chunk type '200'.
+05-27 15:32:51.373  6082  6082 I cr_SplitCompatApp: version=138.0.7204.179 (720417927) minSdkVersion=26 isBundle=true processName=com.android.chrome:sandboxed_process23 isIsolatedProcess=true
+05-27 15:32:51.375  6082  6082 W SystemServiceRegistry: No service published for: uimode
+05-27 15:32:51.376  6082  6082 I cr_ChildProcessService: Creating new ChildProcessService pid=6082
+05-27 15:32:51.394  6082  6106 I cr_LibraryLoader: Successfully loaded native library
+05-27 15:32:51.394  6082  6106 I cr_CachingUmaRecorder: Flushed 2 samples from 2 histograms, 0 samples were dropped.
+05-27 15:32:51.394  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:51.395  1597  1605 I chatty  : uid=1000(system) FinalizerDaemon identical 29 lines
+05-27 15:32:51.395  1597  1605 W System  : A resource failed to call close. 
+05-27 15:32:51.515  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:51.515  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:51.515  4188  4188 I cr_A11yState: Will check again after 4000 milliseconds.
+05-27 15:32:51.523  1455  1455 I sensors@1.0-ser: type=1400 audit(0.0:1543): avc: denied { ioctl } for path="/dev/fastpipe" dev="tmpfs" ino=3085 ioctlcmd=6865 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+05-27 15:32:53.275  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:53.275  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:53.275  4188  4188 I cr_A11yState: Max delay reached. Send information as is.
+05-27 15:32:53.275  4188  4188 I cr_A11yState: Informing listeners of changes.
+05-27 15:32:53.275  4188  4188 I cr_A11yState: New AccessibilityState: State{isComplexUserInteractionServiceEnabled=true, isTouchExplorationEnabled=false, isPerformGesturesEnabled=false, isAnyAccessibilityServiceEnabled=true, isAccessibilityToolPresent=true, isTextShowPasswordEnabled=true, isOnlyAutofillRunning=false, isOnlyPasswordManagersEnabled=false, isKnownScreenReaderEnabled=false}
+05-27 15:32:54.946  1459  1459 I ldinit  : type=1400 audit(0.0:1544): avc: denied { read } for name="partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-27 15:32:54.946  1459  1459 I ldinit  : type=1400 audit(0.0:1545): avc: denied { open } for path="/proc/partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-27 15:32:54.946  1459  1459 I ldinit  : type=1400 audit(0.0:1546): avc: denied { getattr } for path="/proc/partitions" dev="proc" ino=4026532046 scontext=u:r:ldinit:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+05-27 15:32:55.518  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:55.518  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:55.518  4188  4188 I cr_A11yState: Will check again after 250 milliseconds.
+05-27 15:32:55.776  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:55.776  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:55.776  4188  4188 I cr_A11yState: Will check again after 500 milliseconds.
+05-27 15:32:56.284  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:56.284  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:56.284  4188  4188 I cr_A11yState: Will check again after 1000 milliseconds.
+05-27 15:32:57.286  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:57.286  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:57.286  4188  4188 I cr_A11yState: Will check again after 2000 milliseconds.
+05-27 15:32:59.291  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:32:59.291  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:32:59.291  4188  4188 I cr_A11yState: Will check again after 4000 milliseconds.
+05-27 15:33:01.261  4188  4250 I cr_BindingManager: Release visible connections: 0
+05-27 15:33:03.294  4188  4188 I cr_A11yState: Enabled accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService, null]
+05-27 15:33:03.294  4188  4188 I cr_A11yState: Running accessibility services: [io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService]
+05-27 15:33:03.294  4188  4188 I cr_A11yState: Max delay reached. Send information as is.
+05-27 15:33:03.294  4188  4188 I cr_A11yState: Informing listeners of changes.
+05-27 15:33:03.294  4188  4188 I cr_A11yState: New AccessibilityState: State{isComplexUserInteractionServiceEnabled=true, isTouchExplorationEnabled=false, isPerformGesturesEnabled=false, isAnyAccessibilityServiceEnabled=true, isAccessibilityToolPresent=true, isTextShowPasswordEnabled=true, isOnlyAutofillRunning=false, isOnlyPasswordManagersEnabled=false, isKnownScreenReaderEnabled=false}
+05-27 15:33:06.376  1597  1612 E memtrack: Couldn't load memtrack module
+05-27 15:33:06.376  1597  1612 W android.os.Debug: failed to get memory consumption info: -1

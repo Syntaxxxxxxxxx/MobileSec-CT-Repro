@@ -1,0 +1,6 @@
+﻿Starting: Intent { cmp=edu.mobilesec.ctrepro/.MainActivity (has extras) }
+Status: ok
+Activity: edu.mobilesec.ctrepro/.MainActivity
+TotalTime: 550
+WaitTime: 558
+Complete

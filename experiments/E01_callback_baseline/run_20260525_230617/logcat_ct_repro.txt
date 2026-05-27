@@ -1,0 +1,10 @@
+﻿--------- beginning of system
+--------- beginning of main
+05-25 23:14:54.976  3466  3466 I CT_REPRO: E01_callback_baseline | 1779722094976 | 0 | BROWSER_NOT_FOUND | -1 | http://127.0.0.1:8000/basic |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器
+05-25 23:14:56.504  3466  3466 I CT_REPRO: E01_callback_baseline | 1779722096504 | 0 | LAUNCH_SKIPPED | -1 | http://127.0.0.1:8000/basic |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器，跳过 ACTION_VIEW fallback
+05-25 23:15:01.716  3517  3517 I CT_REPRO: E01_callback_baseline | 1779722101713 | 0 | BROWSER_NOT_FOUND | -1 | http://127.0.0.1:8000/status/200 |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器
+05-25 23:15:03.221  3517  3517 I CT_REPRO: E01_callback_baseline | 1779722103221 | 0 | LAUNCH_SKIPPED | -1 | http://127.0.0.1:8000/status/200 |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器，跳过 ACTION_VIEW fallback
+05-25 23:15:08.482  3564  3564 I CT_REPRO: E01_callback_baseline | 1779722108482 | 0 | BROWSER_NOT_FOUND | -1 | http://127.0.0.1:8000/status/404-empty |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器
+05-25 23:15:09.986  3564  3564 I CT_REPRO: E01_callback_baseline | 1779722109986 | 0 | LAUNCH_SKIPPED | -1 | http://127.0.0.1:8000/status/404-empty |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器，跳过 ACTION_VIEW fallback
+05-25 23:15:15.202  3610  3610 I CT_REPRO: E01_callback_baseline | 1779722115202 | 0 | BROWSER_NOT_FOUND | -1 | http://127.0.0.1:8000/status/404-body |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器
+05-25 23:15:16.711  3610  3610 I CT_REPRO: E01_callback_baseline | 1779722116709 | 0 | LAUNCH_SKIPPED | -1 | http://127.0.0.1:8000/status/404-body |  | Android 9 API 28 |  | 未找到支持 Custom Tabs 的浏览器，跳过 ACTION_VIEW fallback

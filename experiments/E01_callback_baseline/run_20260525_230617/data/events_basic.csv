@@ -1,0 +1,3 @@
+"experiment_id","timestamp_ms","relative_ms_from_launch","event_name","event_code","url","browser_package","android_version","browser_version","note"
+"E01_callback_baseline","1779722094976","0","BROWSER_NOT_FOUND","-1","http://127.0.0.1:8000/basic","","Android 9 API 28","","未找到支持 Custom Tabs 的浏览器"
+"E01_callback_baseline","1779722096504","0","LAUNCH_SKIPPED","-1","http://127.0.0.1:8000/basic","","Android 9 API 28","","未找到支持 Custom Tabs 的浏览器，跳过 ACTION_VIEW fallback"

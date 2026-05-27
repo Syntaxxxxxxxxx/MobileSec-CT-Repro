@@ -1,0 +1,2 @@
+﻿Stopping: edu.mobilesec.ctrepro
+Starting: Intent { cmp=edu.mobilesec.ctrepro/.MainActivity (has extras) }

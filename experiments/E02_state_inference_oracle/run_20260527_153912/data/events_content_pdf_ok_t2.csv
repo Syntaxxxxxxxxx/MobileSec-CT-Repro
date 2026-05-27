@@ -1,0 +1,7 @@
+"experiment_id","timestamp_ms","relative_ms_from_launch","event_name","event_code","url","browser_package","android_version","browser_version","note"
+"E02_state_inference_oracle","1779867994471","0","SERVICE_CONNECTED","0","http://198.18.0.1:8000/content/pdf?trial=content_pdf_ok_t2","com.android.chrome","Android 9 API 28","138.0.7204.179","component=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabsConnectionService"
+"E02_state_inference_oracle","1779867994589","0","extraCallback:onWarmupCompleted","10000","http://198.18.0.1:8000/content/pdf?trial=content_pdf_ok_t2","com.android.chrome","Android 9 API 28","138.0.7204.179","bundle={}"
+"E02_state_inference_oracle","1779867995893","1","LAUNCH_REQUESTED","0","http://198.18.0.1:8000/content/pdf?trial=content_pdf_ok_t2","com.android.chrome","Android 9 API 28","138.0.7204.179","准备打开 Custom Tab"
+"E02_state_inference_oracle","1779867996353","461","TAB_SHOWN","5","http://198.18.0.1:8000/content/pdf?trial=content_pdf_ok_t2","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=1588352}"
+"E02_state_inference_oracle","1779867996408","516","NAVIGATION_STARTED","1","http://198.18.0.1:8000/content/pdf?trial=content_pdf_ok_t2","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=1588408}"
+"E02_state_inference_oracle","1779867996505","613","NAVIGATION_ABORTED","4","http://198.18.0.1:8000/content/pdf?trial=content_pdf_ok_t2","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=1588504}"

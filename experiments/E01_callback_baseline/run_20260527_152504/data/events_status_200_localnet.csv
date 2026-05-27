@@ -1,0 +1,7 @@
+"experiment_id","timestamp_ms","relative_ms_from_launch","event_name","event_code","url","browser_package","android_version","browser_version","note"
+"E01_callback_baseline","1779867140893","0","SERVICE_CONNECTED","0","http://198.18.0.1:8000/status/200","com.android.chrome","Android 9 API 28","138.0.7204.179","component=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabsConnectionService"
+"E01_callback_baseline","1779867140941","0","extraCallback:onWarmupCompleted","10000","http://198.18.0.1:8000/status/200","com.android.chrome","Android 9 API 28","138.0.7204.179","bundle={}"
+"E01_callback_baseline","1779867142360","2","LAUNCH_REQUESTED","0","http://198.18.0.1:8000/status/200","com.android.chrome","Android 9 API 28","138.0.7204.179","准备打开 Custom Tab"
+"E01_callback_baseline","1779867142714","356","TAB_SHOWN","5","http://198.18.0.1:8000/status/200","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=734709}"
+"E01_callback_baseline","1779867142763","405","NAVIGATION_STARTED","1","http://198.18.0.1:8000/status/200","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=734763}"
+"E01_callback_baseline","1779867142831","473","NAVIGATION_FINISHED","2","http://198.18.0.1:8000/status/200","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=734831}"
