@@ -87,6 +87,13 @@ If you are grading this: the evidence is in `experiments/`, the story is in `doc
 
 ## 📍 当前进度
 
-E01 已经有一批 baseline 记录。E02 开始跑不同响应行为的 callback/timing 对比。后面还要继续补 E03/E04、整理 presentation，并把报告写得像人类真的读过论文。
+四组实验已经基本跑完：
 
-E01 has baseline evidence. E02 has started collecting response-behavior traces. E03/E04 and the final presentation are still on the menu.
+- E01：Custom Tabs callback baseline 已有可复跑记录。
+- E02：redirect、download、Content-Type、delay 的 callback/timing 差异已经整理成表。
+- E03：本地 demo cookie 证明了 Custom Tab 和 Chrome 共享状态这件事不是都市传说。
+- E04：Header Injection 和 SameSite Strict Cookie Bypass 在现代 Chrome 上记录为 negative result / mitigation analysis。
+
+也就是说，现在仓库已经从“我在搭环境”进入“我真的得把 presentation 做完了”的阶段。
+
+E01-E04 now have local evidence. The remaining boss fight is turning the logs, CSVs, screenshots, and increasingly serious Markdown into a presentation that looks intentional.
