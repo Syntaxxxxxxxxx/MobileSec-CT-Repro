@@ -29,6 +29,8 @@
 | `status` | HTTP 响应状态码 |
 | `user_agent` | User-Agent header |
 | `cookie_present` | 是否存在本地 demo session cookie，值为 `yes` 或 `no` |
+| `strict_cookie_present` | 是否存在本地 SameSite=Strict demo cookie，值为 `yes` 或 `no` |
+| `injected_header_present` | 是否存在受控测试 header `X-CT-Repro-Injected`，值为 `yes` 或 `no` |
 
 ## 3. Endpoint 列表
 
@@ -45,7 +47,13 @@
 | `/download` | GET | E02 | `Content-Disposition: attachment` | 观察 download 行为是否触发 aborted |
 | `/delay/<ms>` | GET | E02 | 延迟 `ms` 毫秒后返回，范围 0-10000 | timing oracle 本地模拟 |
 | `/login` | GET | E03 | 设置本地 demo session cookie | 构造 demo logged-in 状态 |
+| `/logout` | GET | E03 | 清理本地 demo session cookie | E03 前置状态重置 |
 | `/profile` | GET | E03 | 根据 demo cookie 是否存在显示不同页面 | 验证 state sharing 本地现象 |
+| `/samesite/set` | GET | E04 | 设置本地 `SameSite=Strict` demo cookie | SameSite negative result 安全模拟 |
+| `/samesite/check` | GET | E04 | 只显示 Strict demo cookie 是否存在 | 不记录 cookie 值 |
+| `/samesite/clear` | GET | E04 | 清理 Strict demo cookie | E04 前置状态重置 |
+| `/samesite/cross-redirect` | GET | E04 | 从另一本地 host 302 到 Strict cookie check | SameSite Strict 跨站入口安全模拟 |
+| `/headers/echo` | GET | E04 | 检查受控测试 header 是否存在，不回显敏感值 | Header Injection negative result 安全模拟 |
 
 ## 4. 自测命令
 
@@ -71,4 +79,5 @@ $s = New-Object Microsoft.PowerShell.Commands.WebRequestSession
 Invoke-WebRequest http://127.0.0.1:8000/profile -WebSession $s -UseBasicParsing
 Invoke-WebRequest http://127.0.0.1:8000/login -WebSession $s -UseBasicParsing
 Invoke-WebRequest http://127.0.0.1:8000/profile -WebSession $s -UseBasicParsing
+Invoke-WebRequest http://127.0.0.1:8000/logout -WebSession $s -UseBasicParsing
 ```

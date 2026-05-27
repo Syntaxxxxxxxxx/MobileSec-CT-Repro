@@ -570,3 +570,98 @@ experiments/E01_callback_baseline/run_20260527_152504/
 ### 结论
 
 E01_callback_baseline 已完成。Chrome Custom Tabs provider 可用，app 能记录 UI/Logcat/CSV；`404-empty` 与 `404-body` 的 callback 差异可作为 E02 本地 oracle 候选。
+## 2026-05-27 P07 E02_state_inference_oracle
+
+### Run
+
+`experiments/E02_state_inference_oracle/run_20260527_153912/`
+
+### 执行结果
+
+已对 `/redirect/http`、`/redirect/html`、`/download`、`/content/pdf`、`/delay/1000`、`/delay/3000` 各运行 3 次，并采集 `events.csv`、server log、logcat、截图和统计表。
+
+### 汇总表
+
+| Endpoint | 次数 | 主要 callback sequence | 终止事件统计 | 首个终止平均 ms | 最后终止平均 ms | 最后终止 min-max ms |
+|---|---:|---|---|---:|---:|---:|
+| `content_pdf` | 3 | `TAB_SHOWN -> NAVIGATION_STARTED -> NAVIGATION_ABORTED` | `NAVIGATION_ABORTED:3` | 97.7 | 97.7 | 82-114 |
+| `delay_1000` | 3 | `TAB_SHOWN -> NAVIGATION_STARTED -> NAVIGATION_FINISHED -> TAB_HIDDEN` | `NAVIGATION_FINISHED:3` | 1027 | 1027 | 1012-1050 |
+| `delay_3000` | 3 | `TAB_SHOWN -> NAVIGATION_STARTED -> NAVIGATION_FINISHED -> TAB_HIDDEN` | `NAVIGATION_FINISHED:3` | 3020 | 3020 | 3020-3020 |
+| `download` | 3 | `TAB_SHOWN -> NAVIGATION_STARTED -> NAVIGATION_ABORTED` | `NAVIGATION_ABORTED:3` | 91.7 | 91.7 | 70-103 |
+| `redirect_html` | 3 | `TAB_SHOWN -> NAVIGATION_STARTED -> NAVIGATION_FINISHED -> NAVIGATION_STARTED -> NAVIGATION_ABORTED -> NAVIGATION_STARTED -> NAVIGATION_FINISHED -> TAB_HIDDEN` | `NAVIGATION_FINISHED:3` | 55.3 | 258 | 219-320 |
+| `redirect_http` | 3 | `TAB_SHOWN -> NAVIGATION_STARTED -> NAVIGATION_FINISHED -> TAB_HIDDEN` | `NAVIGATION_FINISHED:3` | 245 | 245 | 123-458 |
+
+### 证据路径
+
+- `experiments/E02_state_inference_oracle/run_20260527_153912/commands.md`
+- `experiments/E02_state_inference_oracle/run_20260527_153912/server.log`
+- `experiments/E02_state_inference_oracle/run_20260527_153912/logcat_ct_repro.txt`
+- `experiments/E02_state_inference_oracle/run_20260527_153912/data/events.csv`
+- `experiments/E02_state_inference_oracle/run_20260527_153912/data/summary_tables.md`
+- `experiments/E02_state_inference_oracle/run_20260527_153912/observations.md`
+
+### 结论
+
+E02 已完成。HTML redirect、download/PDF handling、以及 1000 ms/3000 ms delay 均表现出可区分 callback sequence 或 timing 差异。
+## 2026-05-27 P08 E03_state_sharing_cookie
+
+### Run
+
+`experiments/E03_state_sharing_cookie/run_20260527_181001/`
+
+### 执行结果
+
+已完成本地 demo cookie 状态共享实验。为了可靠重置本地状态，新增安全 endpoint `/logout`，只删除 demo cookie，不记录 cookie 值。最终有效流程：
+
+| Step | Endpoint | 上下文 | `cookie_present` |
+|---|---|---|---|
+| reset | `/logout` | Custom Tab | yes，随后清理 |
+| before | `/profile` | Custom Tab | no |
+| login | `/login` | Custom Tab | no |
+| after_ct | `/profile` | Custom Tab | yes |
+| after_browser | `/profile` | Chrome 浏览器 | yes |
+
+### 证据路径
+
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/commands.md`
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/server.log`
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/logcat_ct_repro.txt`
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/data/events.csv`
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/screenshots/e03_final_ct_profile_before.png`
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/screenshots/e03_final_ct_profile_after.png`
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/screenshots/e03_final_browser_profile_after.png`
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/observations.md`
+
+### 结论
+
+E03 已完成。结果支持论文 Sec. 2.1 中 Custom Tabs 共享底层浏览器 cookie 状态的机制，本项目只使用本地 demo session，未记录 cookie 值。
+## 2026-05-27 P09 E04_modern_mitigation_negative
+
+### Run
+
+`experiments/E04_modern_mitigation_negative/run_20260527_182908/`
+
+### 执行结果
+
+已使用现代 Chrome `com.android.chrome 138.0.7204.179` 完成本地 negative result / 安全模拟。新增本地 endpoint：`/samesite/set`、`/samesite/check`、`/samesite/clear`、`/samesite/cross-redirect`、`/headers/echo`。
+
+| 测试项 | 观察结果 | 结论 |
+|---|---|---|
+| SameSite Strict 主文档 check | `/samesite/check` 主请求 `strict_cookie_present=no` | 现代 Chrome 未在初始主文档导航异常发送 Strict cookie |
+| SameSite cross redirect | `10.12.173.13` -> `198.18.0.1` 目标 check 为 `strict_cookie_present=no` | 未复现 SameSite Strict bypass |
+| Custom Tab direct check | CT 打开 `/samesite/check` 为 `strict_cookie_present=no` | native app CT 初始请求未异常携带 Strict cookie |
+| Header CRLF probe | URL query 中 `%0D%0A X-CT-Repro-Injected` 未生成 header，`injected_header_present=no` | 未复现 Header Injection |
+| Header control | PowerShell 显式 header 请求为 `injected_header_present=yes` | server 检测逻辑有效 |
+
+### 证据路径
+
+- `experiments/E04_modern_mitigation_negative/run_20260527_182908/commands.md`
+- `experiments/E04_modern_mitigation_negative/run_20260527_182908/server.log`
+- `experiments/E04_modern_mitigation_negative/run_20260527_182908/logcat_ct_repro.txt`
+- `experiments/E04_modern_mitigation_negative/run_20260527_182908/data/events.csv`
+- `experiments/E04_modern_mitigation_negative/run_20260527_182908/screenshots/`
+- `experiments/E04_modern_mitigation_negative/run_20260527_182908/observations.md`
+
+### 结论
+
+E04 已完成。未安装不可信旧版浏览器，未访问真实网站；现代 Chrome 的本地观察结果作为 SameSite/Header Injection 相关问题的 mitigation / negative result。

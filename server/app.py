@@ -16,6 +16,8 @@ DEFAULT_LOG_PATH = Path(__file__).with_name("server.log")
 LOG_PATH = Path(os.environ.get("CT_REPRO_SERVER_LOG", DEFAULT_LOG_PATH))
 DEMO_COOKIE_NAME = "ct_repro_demo_session"
 DEMO_COOKIE_VALUE = "demo_logged_in"
+SAMESITE_COOKIE_NAME = "ct_repro_strict_demo"
+SAMESITE_COOKIE_VALUE = "strict_demo"
 
 
 def now_iso() -> str:
@@ -24,6 +26,10 @@ def now_iso() -> str:
 
 def cookie_present() -> bool:
     return DEMO_COOKIE_NAME in request.cookies
+
+
+def strict_cookie_present() -> bool:
+    return SAMESITE_COOKIE_NAME in request.cookies
 
 
 def write_server_log(status_code: int) -> None:
@@ -35,6 +41,8 @@ def write_server_log(status_code: int) -> None:
         "status": status_code,
         "user_agent": request.headers.get("User-Agent", ""),
         "cookie_present": "yes" if cookie_present() else "no",
+        "strict_cookie_present": "yes" if strict_cookie_present() else "no",
+        "injected_header_present": "yes" if "X-CT-Repro-Injected" in request.headers else "no",
     }
     is_new_file = not LOG_PATH.exists()
     with LOG_PATH.open("a", newline="", encoding="utf-8") as log_file:
@@ -188,6 +196,17 @@ def login() -> Response:
     return response
 
 
+@app.get("/logout")
+def logout() -> Response:
+    body = """
+  <p>已清理本地 demo session cookie。</p>
+  <p>该 endpoint 只用于 E03 实验前重置本地测试状态，不处理真实账号或真实 cookie。</p>
+"""
+    response = html_page("demo logout", body)
+    response.delete_cookie(DEMO_COOKIE_NAME)
+    return response
+
+
 @app.get("/profile")
 def profile() -> Response:
     if cookie_present():
@@ -201,6 +220,66 @@ def profile() -> Response:
   <p>请先访问 <code>/login</code> 设置本地 demo cookie。</p>
 """
     return html_page("demo profile", body)
+
+
+@app.get("/samesite/set")
+def samesite_set() -> Response:
+    body = """
+  <p>已设置本地 SameSite=Strict demo cookie。</p>
+  <p>该 cookie 只用于本地安全模拟，不包含真实账号、真实 token 或真实隐私数据。</p>
+  <p>server log 不记录 cookie 值；后续只观察 cookie 是否存在。</p>
+"""
+    response = html_page("SameSite Strict demo set", body)
+    response.set_cookie(
+        SAMESITE_COOKIE_NAME,
+        SAMESITE_COOKIE_VALUE,
+        httponly=True,
+        samesite="Strict",
+        max_age=3600,
+    )
+    return response
+
+
+@app.get("/samesite/check")
+def samesite_check() -> Response:
+    present = "yes" if strict_cookie_present() else "no"
+    body = f"""
+  <p>Strict demo cookie present: <strong>{present}</strong></p>
+  <p>本页面只显示是否存在本地 demo cookie，不显示 cookie 值。</p>
+"""
+    return html_page("SameSite Strict demo check", body)
+
+
+@app.get("/samesite/clear")
+def samesite_clear() -> Response:
+    body = """
+  <p>已清理本地 SameSite=Strict demo cookie。</p>
+  <p>该 endpoint 只用于 E04 前置状态重置。</p>
+"""
+    response = html_page("SameSite Strict demo clear", body)
+    response.delete_cookie(SAMESITE_COOKIE_NAME)
+    return response
+
+
+@app.get("/samesite/cross-redirect")
+def samesite_cross_redirect() -> Response:
+    target = request.args.get("target", "http://198.18.0.1:8000/samesite/check?step=cross_redirect_target")
+    if not target.startswith("http://198.18.0.1:8000/samesite/check"):
+        return html_page("invalid target", "<p>只允许跳转到本地 SameSite check endpoint。</p>", status=400)
+    return redirect(target, code=302)
+
+
+@app.get("/headers/echo")
+def headers_echo() -> Response:
+    injected_present = "yes" if "X-CT-Repro-Injected" in request.headers else "no"
+    probe = request.args.get("probe", "")
+    newline_in_probe = "yes" if ("\r" in probe or "\n" in probe) else "no"
+    body = f"""
+  <p>Injected header present: <strong>{injected_present}</strong></p>
+  <p>Probe contains decoded newline: <strong>{newline_in_probe}</strong></p>
+  <p>该页面只用于本地 header 安全模拟；不回显敏感 header 值，不访问真实网站。</p>
+"""
+    return html_page("Header echo negative check", body)
 
 
 if __name__ == "__main__":

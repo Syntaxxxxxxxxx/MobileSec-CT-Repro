@@ -260,3 +260,89 @@ Chrome 安装后，`com.android.chrome` 暴露了 `org.chromium.chrome.browser.c
 - `experiments/E01_callback_baseline/run_20260527_152504/observations.md`
 
 阶段结论：E01 已完成，可以进入 E02_state_inference_oracle，继续测试 redirect、download、Content-Type、delay 等 endpoint 的 callback/timing 差异。
+## 12. E02_state_inference_oracle 复现结果
+
+Run 目录：
+
+```text
+experiments/E02_state_inference_oracle/run_20260527_153912/
+```
+
+本次使用 Chrome `138.0.7204.179` 和 LDPlayer，所有 endpoint 均为本地 mock server `http://198.18.0.1:8000`。每个 endpoint 有效运行 3 次。
+
+| Endpoint | 次数 | 主要 callback sequence | 终止事件统计 | 首个终止平均 ms | 最后终止平均 ms | 最后终止 min-max ms |
+|---|---:|---|---|---:|---:|---:|
+| `content_pdf` | 3 | `TAB_SHOWN -> NAVIGATION_STARTED -> NAVIGATION_ABORTED` | `NAVIGATION_ABORTED:3` | 97.7 | 97.7 | 82-114 |
+| `delay_1000` | 3 | `TAB_SHOWN -> NAVIGATION_STARTED -> NAVIGATION_FINISHED -> TAB_HIDDEN` | `NAVIGATION_FINISHED:3` | 1027 | 1027 | 1012-1050 |
+| `delay_3000` | 3 | `TAB_SHOWN -> NAVIGATION_STARTED -> NAVIGATION_FINISHED -> TAB_HIDDEN` | `NAVIGATION_FINISHED:3` | 3020 | 3020 | 3020-3020 |
+| `download` | 3 | `TAB_SHOWN -> NAVIGATION_STARTED -> NAVIGATION_ABORTED` | `NAVIGATION_ABORTED:3` | 91.7 | 91.7 | 70-103 |
+| `redirect_html` | 3 | `TAB_SHOWN -> NAVIGATION_STARTED -> NAVIGATION_FINISHED -> NAVIGATION_STARTED -> NAVIGATION_ABORTED -> NAVIGATION_STARTED -> NAVIGATION_FINISHED -> TAB_HIDDEN` | `NAVIGATION_FINISHED:3` | 55.3 | 258 | 219-320 |
+| `redirect_http` | 3 | `TAB_SHOWN -> NAVIGATION_STARTED -> NAVIGATION_FINISHED -> TAB_HIDDEN` | `NAVIGATION_FINISHED:3` | 245 | 245 | 123-458 |
+
+结论：E02 成功复现出 callback sequence 与 timing oracle 的本地安全版本。HTML redirect、download/PDF content handling、以及 1000 ms/3000 ms delay 均可被宿主 app 的 Custom Tabs callback 记录为可区分模式。该结果对应论文 Sec. 3.4 / Sec. 3.4.1，但没有访问真实站点，也没有收集真实 cookie/token/账号数据。
+
+证据：
+
+- `experiments/E02_state_inference_oracle/run_20260527_153912/commands.md`
+- `experiments/E02_state_inference_oracle/run_20260527_153912/server.log`
+- `experiments/E02_state_inference_oracle/run_20260527_153912/logcat_ct_repro.txt`
+- `experiments/E02_state_inference_oracle/run_20260527_153912/data/events.csv`
+- `experiments/E02_state_inference_oracle/run_20260527_153912/data/sequence_timing_summary.csv`
+- `experiments/E02_state_inference_oracle/run_20260527_153912/screenshots/`
+- `experiments/E02_state_inference_oracle/run_20260527_153912/observations.md`
+## 13. E03_state_sharing_cookie 复现结果
+
+Run 目录：
+
+```text
+experiments/E03_state_sharing_cookie/run_20260527_181001/
+```
+
+本次使用本地 demo cookie 验证 Custom Tab 与普通 Chrome 浏览器共享状态。为保证实验可重置，mock server 增加 `/logout`，只清理 demo cookie，不记录 cookie 值。
+
+| Step | Endpoint | 上下文 | `cookie_present` |
+|---|---|---|---|
+| reset | `/logout` | Custom Tab | yes，随后清理 |
+| before | `/profile` | Custom Tab | no |
+| login | `/login` | Custom Tab | no |
+| after_ct | `/profile` | Custom Tab | yes |
+| after_browser | `/profile` | Chrome 浏览器 | yes |
+
+结论：Custom Tab 中 `/login` 设置的本地 demo cookie 会被同一底层 Chrome 浏览器状态共享；随后 Custom Tab 与普通 Chrome 访问 `/profile` 均为 `cookie_present=yes`。该结果对应论文 Sec. 2.1 的 state sharing 机制，并为 Sec. 3.4 的 state inference oracle 提供本地安全前提验证。
+
+证据：
+
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/commands.md`
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/server.log`
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/logcat_ct_repro.txt`
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/data/events.csv`
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/screenshots/`
+- `experiments/E03_state_sharing_cookie/run_20260527_181001/observations.md`
+## 14. E04_modern_mitigation_negative 复现结果
+
+Run 目录：
+
+```text
+experiments/E04_modern_mitigation_negative/run_20260527_182908/
+```
+
+本次使用现代 Chrome `com.android.chrome 138.0.7204.179`，只访问本地 mock server，不安装旧版浏览器，不访问真实网站。
+
+| 测试项 | 观察结果 | 结论 |
+|---|---|---|
+| SameSite Strict 主文档 check | `/samesite/check` 主请求 `strict_cookie_present=no` | 现代 Chrome 未在初始主文档导航异常发送 Strict cookie |
+| SameSite cross redirect | `10.12.173.13` -> `198.18.0.1` 目标 check 为 `strict_cookie_present=no` | 未复现 SameSite Strict bypass |
+| Custom Tab direct check | CT 打开 `/samesite/check` 为 `strict_cookie_present=no` | native app CT 初始请求未异常携带 Strict cookie |
+| Header CRLF probe | URL query 中 `%0D%0A X-CT-Repro-Injected` 未生成 header，`injected_header_present=no` | 未复现 Header Injection |
+| Header control | PowerShell 显式 header 请求为 `injected_header_present=yes` | server 检测逻辑有效 |
+
+结论：E04 记录为现代浏览器 mitigation / negative result。该结果对应论文 Sec. 3.5、Sec. 3.6 与 Sec. 4.3；论文中的旧版浏览器问题没有在 Chrome 138 本地安全模拟中复现。server log 只记录 cookie/header 是否存在，不记录 cookie 值或 header 值。
+
+证据：
+
+- `experiments/E04_modern_mitigation_negative/run_20260527_182908/commands.md`
+- `experiments/E04_modern_mitigation_negative/run_20260527_182908/server.log`
+- `experiments/E04_modern_mitigation_negative/run_20260527_182908/logcat_ct_repro.txt`
+- `experiments/E04_modern_mitigation_negative/run_20260527_182908/data/events.csv`
+- `experiments/E04_modern_mitigation_negative/run_20260527_182908/screenshots/`
+- `experiments/E04_modern_mitigation_negative/run_20260527_182908/observations.md`

@@ -79,7 +79,7 @@
 |---|---|
 | 论文依据 | Sec. 3.5, Sec. 3.6, Sec. 4.2, Sec. 4.3, Table 2, Table 6, Table 7 |
 | Hypothesis | 现代浏览器已修复或缓解 Header Injection 与 SameSite Strict Cookie Bypass，本项目主要记录 negative result 与 mitigation 分析。 |
-| Endpoint | 可选 `/headers/echo`, `/samesite/set`, `/samesite/check` |
+| Endpoint | `/headers/echo`, `/samesite/set`, `/samesite/check`, `/samesite/clear` |
 | 变量 | 浏览器包名/版本、header 值、SameSite 属性 |
 | Expected result | Header Injection 不应可利用；SameSite Strict cookie 不应在不可信跨上下文场景中异常发送。 |
 | Evidence | 浏览器版本、server.log、events.csv、截图、negative result 说明。 |
@@ -109,7 +109,12 @@
 | `/download` | 已实现 | E02 | HTTP 200，`Content-Disposition: attachment` |
 | `/delay/<ms>` | 已实现 | E02 | `/delay/100` 自测耗时约 0.103 秒；限制范围 0-10000 ms |
 | `/login` | 已实现 | E03 | 设置本地 demo cookie；server log 不记录 cookie 值 |
+| `/logout` | 已实现 | E03 | 清理本地 demo cookie；用于 E03 前置状态重置 |
 | `/profile` | 已实现 | E03 | 无 cookie 显示 not logged in；有 demo cookie 显示 logged-in demo user |
+| `/samesite/set` | 已实现 | E04 | 设置本地 `SameSite=Strict` demo cookie；不记录 cookie 值 |
+| `/samesite/check` | 已实现 | E04 | 只显示 Strict demo cookie 是否存在 |
+| `/samesite/clear` | 已实现 | E04 | 清理本地 Strict demo cookie |
+| `/headers/echo` | 已实现 | E04 | 检查受控测试 header 是否存在，不回显敏感 header 值 |
 
 Server log 已实现 CSV 写入，字段为 `timestamp,method,path,status,user_agent,cookie_present`。自测确认 `/profile` 在 login 前记录 `cookie_present=no`，login 后记录 `cookie_present=yes`，未记录 cookie 值。
 

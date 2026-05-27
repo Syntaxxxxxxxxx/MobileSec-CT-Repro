@@ -1,0 +1,8 @@
+"experiment_id","timestamp_ms","relative_ms_from_launch","event_name","event_code","url","browser_package","android_version","browser_version","note"
+"E03_state_sharing_cookie","1779876526627","0","SERVICE_CONNECTED","0","http://198.18.0.1:8000/profile?step=ct_profile_after","com.android.chrome","Android 9 API 28","138.0.7204.179","component=com.android.chrome/org.chromium.chrome.browser.customtabs.CustomTabsConnectionService"
+"E03_state_sharing_cookie","1779876526669","0","extraCallback:onWarmupCompleted","10000","http://198.18.0.1:8000/profile?step=ct_profile_after","com.android.chrome","Android 9 API 28","138.0.7204.179","bundle={}"
+"E03_state_sharing_cookie","1779876528089","1","LAUNCH_REQUESTED","0","http://198.18.0.1:8000/profile?step=ct_profile_after","com.android.chrome","Android 9 API 28","138.0.7204.179","准备打开 Custom Tab"
+"E03_state_sharing_cookie","1779876528431","343","TAB_SHOWN","5","http://198.18.0.1:8000/profile?step=ct_profile_after","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=10120416}"
+"E03_state_sharing_cookie","1779876528480","392","NAVIGATION_STARTED","1","http://198.18.0.1:8000/profile?step=ct_profile_after","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=10120466}"
+"E03_state_sharing_cookie","1779876528532","444","NAVIGATION_FINISHED","2","http://198.18.0.1:8000/profile?step=ct_profile_after","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=10120532}"
+"E03_state_sharing_cookie","1779876534981","6893","TAB_HIDDEN","6","http://198.18.0.1:8000/profile?step=ct_profile_after","com.android.chrome","Android 9 API 28","138.0.7204.179","extras={timestampUptimeMillis=10126981}"
